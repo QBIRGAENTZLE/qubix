@@ -1,0 +1,9 @@
+mat-sidenav-container {
+    position: inherit;
+}
+
+mat-toolbar {
+    bottom  : 0;
+    position: absolute;
+    z-index : 2;
+}
