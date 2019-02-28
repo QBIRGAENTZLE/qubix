@@ -1,9 +1,18 @@
-mat-sidenav-container {
-    position: inherit;
+.container {
+    display       : flex;
+    flex-direction: column;
+    height        : 100%;
+}
+
+.mat-sidenav-container {
+    height: 100%;
 }
 
 mat-toolbar {
-    bottom  : 0;
-    position: absolute;
-    z-index : 2;
+    &.toolbar {
+        &#footerToolbar {
+            bottom  : 0;
+            position: sticky;
+        }
+    }
 }
