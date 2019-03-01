@@ -1,6 +1,8 @@
 {
     "CONTACT": "Contact",
-    "FORMATION": "Formation",
     "EXPERIENCES": "Expériences",
+    "FORMATION": "Formation",
+    "HOME": "Accueil",
+    "PROJECTS": "Projets",
     "TRADUCTION_TEST": "Un test de traduction"
 }

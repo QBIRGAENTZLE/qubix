@@ -1,18 +1,18 @@
 <div class="container">
     <mat-toolbar color="primary" class="toolbar" id="headerToolbar">
         <mat-toolbar-row>
-            <button type="button" (click)="drawer.toggle()" color="primary">
-                <mat-icon>menu</mat-icon>
-            </button>
+            <app-header (toggleMenuOutput)="toggleMenu()"></app-header>
         </mat-toolbar-row>
     </mat-toolbar>
 
     <mat-sidenav-container class="mat-sidenav-container">
-        <mat-sidenav #drawer mode="side" opened role="navigation">
+        <mat-sidenav id="mainSideBar" #mainSideBar mode="side" opened role="navigation">
             <app-sidebar></app-sidebar>
         </mat-sidenav>
 
         <mat-sidenav-content>
+            <router-outlet></router-outlet>
+
             START Main content Main content Main content Main content Main content Main content Main content Main content Main content Main content Main content Main content Main content Main content Main content Main content Main content Main
             content
             Main content Main content Main content Main content Main content Main content Main content Main content Main content Main content Main content Main content Main content Main content Main content Main content Main content Main content
@@ -77,7 +77,6 @@
             Main content Main content Main content Main content Main content Main content Main content Main content Main content Main content Main content Main content Main content Main content Main content Main content Main content Main content
             Main content Main content Main content Main content Main content Main content Main content Main content Main content Main content Main content Main content Main content Main content Main content Main content Main content Main content
             Main content Main content Main content Main content Main content Main content Main content Main content Main content END
-            <router-outlet></router-outlet>
 
 
 

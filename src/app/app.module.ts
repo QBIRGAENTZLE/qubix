@@ -24,10 +24,20 @@ import { AppRoutingModule } from './app-routing.module';
 
 // COMPONENTS IMPORT
 import { AppComponent } from './app.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { ExperiencesComponent } from './components/experiences/experiences.component';
+import { FormationComponent } from './components/formation/formation.component';
+import { HomeComponent } from './components/home/home.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        ContactComponent,
+        ExperiencesComponent,
+        FormationComponent,
+        HomeComponent,
+        ProjectsComponent
     ],
     imports: [
         AppRoutingModule,
