@@ -13,9 +13,12 @@ export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http);
 }
 
+// EXTERNAL MODULES IMPORT
+import { MaterialModule } from './material.module';
+import { MglTimelineModule } from 'angular-mgl-timeline';
+
 // CUSTOM MODULES IMPORT
 import { LayoutModule } from './components/layoutComponents/layout.module';
-import { MaterialModule } from './material.module';
 
 // ROUTING
 import { AppRoutingModule } from './app-routing.module';
@@ -44,8 +47,9 @@ import { ProjectsComponent } from './components/projects/projects.component';
         BrowserAnimationsModule,
         BrowserModule,
         HttpClientModule,
-        MaterialModule,
         LayoutModule,
+        MaterialModule,
+        MglTimelineModule,
         TranslateModule.forRoot({
             loader: {
                 provide: TranslateLoader,

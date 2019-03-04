@@ -1,3 +1,5 @@
+@import './styles/colors';
+
 .container {
     display       : flex;
     flex-direction: column;
@@ -18,8 +20,12 @@ mat-sidenav-container {
 
 mat-toolbar {
     &.toolbar {
+        background: $grey;
+
         &#footerToolbar {
             bottom  : 0;
+            display : block;
+            height  : 30px;
             position: sticky;
         }
     }

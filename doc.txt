@@ -1,0 +1,1 @@
+TIMELINE MODULE : https://www.npmjs.com/package/angular-mgl-timeline
