@@ -1,0 +1,21 @@
+[{
+        "companyName": "Peaks",
+        "date": {
+            "start": "9 Octobre 2017",
+            "end": null
+        },
+        "description": "Développeur JavaScript (Angular, NodeJS, Electron) en prestation auprès de clients finaux",
+        "jobTitle": "Développeur Web Full-Stack",
+        "place": "Lyon (69)"
+    },
+    {
+        "companyName": "Actilan",
+        "date": {
+            "start": "14 Janvier 2014",
+            "end": "30 Septembre 2017"
+        },
+        "description": "CDD de 7 mois (en attendant le début de la formation) puis deux Contrats Professionnels dans le cadre de mes formations Développeur Web Full-Stack puis Chef de Projet Informatique, chez IP-Formation et IT-Akademy.",
+        "jobTitle": "Développeur Web Alternant",
+        "place": "Lyon (69)"
+    }
+]

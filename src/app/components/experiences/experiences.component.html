@@ -1,22 +1,10 @@
 <mgl-timeline>
-    <mgl-timeline-entry>
-        <mgl-timeline-entry-header>Header</mgl-timeline-entry-header>
-        <mgl-timeline-entry-content>Content</mgl-timeline-entry-content>
+    <mgl-timeline-entry *ngFor="let exp of experiencesList">
+        <mgl-timeline-entry-side>
+            {{exp.date.start | amDateFormat:'MMMM YYYY'}} - {{exp.date.end | amDateFormat:'LL'}} ({{exp.duration | amDuration: 'milliseconds'}})
+        </mgl-timeline-entry-side>
+        <mgl-timeline-entry-header>{{exp.companyName}} - {{exp.jobTitle}}</mgl-timeline-entry-header>
         <mgl-timeline-entry-dot [size]="40"></mgl-timeline-entry-dot>
-        <mgl-timeline-entry-side>2018</mgl-timeline-entry-side>
-    </mgl-timeline-entry>
-
-    <mgl-timeline-entry>
-        <mgl-timeline-entry-header>Header</mgl-timeline-entry-header>
-        <mgl-timeline-entry-content>Content</mgl-timeline-entry-content>
-        <mgl-timeline-entry-dot [size]="40"></mgl-timeline-entry-dot>
-        <mgl-timeline-entry-side>2018</mgl-timeline-entry-side>
-    </mgl-timeline-entry>
-
-    <mgl-timeline-entry>
-        <mgl-timeline-entry-header>Header</mgl-timeline-entry-header>
-        <mgl-timeline-entry-content>Content</mgl-timeline-entry-content>
-        <mgl-timeline-entry-dot [size]="40"></mgl-timeline-entry-dot>
-        <mgl-timeline-entry-side>2018</mgl-timeline-entry-side>
+        <mgl-timeline-entry-content>{{exp.description}}</mgl-timeline-entry-content>
     </mgl-timeline-entry>
 </mgl-timeline>
