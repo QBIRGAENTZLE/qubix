@@ -1,10 +1,17 @@
 <mgl-timeline>
     <mgl-timeline-entry *ngFor="let exp of experiencesList">
         <mgl-timeline-entry-side>
-            {{exp.date.start | amDateFormat:'MMMM YYYY'}} - {{exp.date.end | amDateFormat:'LL'}} ({{exp.duration | amDuration: 'milliseconds'}})
+            {{exp.date.start | amDateFormat:'MMMM YYYY'}} -
+            <ng-container *ngIf="exp.date.end; then endedExp; else inprogressExp"></ng-container>
+
+            <ng-template #endedExp> {{exp.date.end | amDateFormat:'MMMM YYYY'}}</ng-template>
+            <ng-template #inprogressExp> {{ "TODAY" | translate}}</ng-template>
+            {{exp.duration | duration}}
         </mgl-timeline-entry-side>
-        <mgl-timeline-entry-header>{{exp.companyName}} - {{exp.jobTitle}}</mgl-timeline-entry-header>
+        <mgl-timeline-entry-header>{{exp.companyName}} - {{exp.jobTitle}} - {{exp.place}}</mgl-timeline-entry-header>
         <mgl-timeline-entry-dot [size]="40"></mgl-timeline-entry-dot>
-        <mgl-timeline-entry-content>{{exp.description}}</mgl-timeline-entry-content>
+        <mgl-timeline-entry-content>
+            <div [innerHTML]="exp.description"></div>
+        </mgl-timeline-entry-content>
     </mgl-timeline-entry>
 </mgl-timeline>

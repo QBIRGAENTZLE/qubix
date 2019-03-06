@@ -25,7 +25,8 @@ import { LayoutModule } from './components/layoutComponents/layout.module';
 // ROUTING
 import { AppRoutingModule } from './app-routing.module';
 
-// PROVIDERS IMPORT
+// PIPES IMPORT
+import { DurationPipe } from 'src/app/pipes/duration.pipe';
 
 // COMPONENTS IMPORT
 import { AppComponent } from './app.component';
@@ -39,6 +40,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
     declarations: [
         AppComponent,
         ContactComponent,
+        DurationPipe,
         ExperiencesComponent,
         FormationComponent,
         HomeComponent,

@@ -16,7 +16,7 @@ export class Experience {
             this.duration = this.date.end.valueOf() - this.date.start.valueOf();
 
         } else {
-            this.duration = 0;
+            this.duration = (new Date().valueOf()) - this.date.start.valueOf();
         }
         this.description = exp.description;
         this.jobTitle = exp.jobTitle;
