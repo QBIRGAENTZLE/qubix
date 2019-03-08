@@ -1,15 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+
+import { FormationService } from 'src/app/providers/formation.service';
+
+import { Formation } from 'src/app/models/formation';
 
 @Component({
-  selector: 'app-formation',
-  templateUrl: './formation.component.html',
-  styleUrls: ['./formation.component.scss']
+    selector: 'app-formation',
+    templateUrl: './formation.component.html',
+    styleUrls: ['./formation.component.scss']
 })
-export class FormationComponent implements OnInit {
+export class FormationComponent {
 
-  constructor() { }
+    public formationList: Formation[];
 
-  ngOnInit() {
-  }
+    constructor(
+        private formationService: FormationService
+    ) {
+        this.formationList = this.formationService.getFormationList();
+    }
 
 }

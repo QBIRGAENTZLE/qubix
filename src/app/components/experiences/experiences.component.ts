@@ -18,7 +18,6 @@ export class ExperiencesComponent {
         private experiencesService: ExperiencesService
     ) {
         this.experiencesList = this.experiencesService.getExperiencesList();
-        console.log('explist', this.experiencesList);
     }
 
 }

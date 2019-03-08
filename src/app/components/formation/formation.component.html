@@ -1,3 +1,12 @@
-<p>
-  formation works!
-</p>
+<mgl-timeline>
+    <mgl-timeline-entry *ngFor="let form of formationList">
+        <mgl-timeline-entry-side>
+            {{form.years.start }} - {{ form.years.end }}
+        </mgl-timeline-entry-side>
+        <mgl-timeline-entry-header>{{form.degree.level}}, {{form.degree.name}} - {{form.schoolName}} - {{form.place}}</mgl-timeline-entry-header>
+        <mgl-timeline-entry-dot [size]="40"></mgl-timeline-entry-dot>
+        <mgl-timeline-entry-content>
+            <div [innerHTML]="form.description"></div>
+        </mgl-timeline-entry-content>
+    </mgl-timeline-entry>
+</mgl-timeline>

@@ -1,0 +1,66 @@
+[{
+        "schoolName": "IT-Akademy",
+        "place": "Lyon (69)",
+        "years": {
+            "start": 2016,
+            "end": 2017
+        },
+        "degree": {
+            "level": "Master 2 (M2)",
+            "name": "Chef de Projet Informatique - Spécialité Développement"
+        },
+        "description": "<p>Formation en alternance</p><p>Titre de niveau 1</p>"
+    },
+    {
+        "schoolName": "Ecole IPSSI - Groupe IP-Formation",
+        "place": "Lyon (69)",
+        "years": {
+            "start": 2014,
+            "end": 2016
+        },
+        "degree": {
+            "level": "Master 1 (M1)",
+            "name": "Développeur Full-Stack"
+        },
+        "description": "<p>Validation également du M1 Administrateur du système d'information - Spécialité Développement</p><p>Formation en alternance</p><p>Titres de niveau 2</p><p>Développement web et mobile </p><p>Php, Angular, NodeJS, JS, Swift, IONIC, API</p><p>Configuration environnement Linux, Vagrant, Docker</p><p>Gestion et suivi de projet</p><p>Projet : Refonte du site internet IPSSI et Développement d'un intranet métier orienté ERP</p><p>Mémoire : Mise en place d'une solution CRM au sein d'une entreprise</p>"
+    },
+    {
+        "schoolName": "IUT Robert Schuman",
+        "place": "Strasbourg (67)",
+        "years": {
+            "start": 2012,
+            "end": 2013
+        },
+        "degree": {
+            "level": "License Professionnelle",
+            "name": "Système Informatique et Logiciel (SIL): Concepteur-Dévelopeur en Environnement Distribué (CDED)"
+        },
+        "description": "<p>Formation en alternance</p>"
+    },
+    {
+        "schoolName": "IUT de Mulhouse",
+        "place": "Mulhouse (68)",
+        "years": {
+            "start": 2010,
+            "end": 2012
+        },
+        "degree": {
+            "level": "DUT",
+            "name": "Services et Réseaux de Communication (SRC)"
+        },
+        "description": ""
+    },
+    {
+        "schoolName": "Lycée Bartholdi",
+        "place": "Colmar (68)",
+        "years": {
+            "start": 2007,
+            "end": 2010
+        },
+        "degree": {
+            "level": "Baccalauréat",
+            "name": "Scientifique"
+        },
+        "description": ""
+    }
+]
