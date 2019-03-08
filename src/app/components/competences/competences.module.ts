@@ -6,7 +6,7 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 // ROUTING
-import { AppRoutingModule } from '../../app-routing.module';
+import { CompRoutingModule } from './comp-routing.module';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -16,18 +16,18 @@ export function HttpLoaderFactory(http: HttpClient) {
 // CUSTOM MODULES IMPORT
 import { MaterialModule } from '../../material.module';
 
-import { FooterComponent } from './footer/footer.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
-import { HeaderComponent } from './header/header.component';
+import { CompetencesComponent } from './competences.component';
+import { DevelopmentsCompetencesComponent } from './components/developments-competences/developments-competences.component';
+import { ManagementsCompetencesComponent } from './components/managements-competences/managements-competences.component';
 
 @NgModule({
     declarations: [
-        FooterComponent,
-        SidebarComponent,
-        HeaderComponent
+        CompetencesComponent,
+        DevelopmentsCompetencesComponent,
+        ManagementsCompetencesComponent
     ],
     imports: [
-        AppRoutingModule,
+        CompRoutingModule,
         MaterialModule,
         HttpClientModule,
         TranslateModule.forChild({
@@ -39,10 +39,7 @@ import { HeaderComponent } from './header/header.component';
         })
     ],
     exports: [
-        FooterComponent,
-        SidebarComponent,
-        HeaderComponent
+        CompetencesComponent
     ]
 })
-
-export class LayoutModule { }
+export class CompetencesModule { }

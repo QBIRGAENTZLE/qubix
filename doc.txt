@@ -1,2 +1,3 @@
+ANGULAR MATERIAL : https://material.angular.io/components/categories
 TIMELINE MODULE : https://www.npmjs.com/package/angular-mgl-timeline
 MOMENT MODULE : https://www.npmjs.com/package/ngx-moment
