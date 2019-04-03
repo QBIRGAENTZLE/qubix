@@ -1,0 +1,29 @@
+#projectsList {
+    mat-expansion-panel {
+        margin: 10px;
+    }
+
+    mat-panel-description,
+    mat-panel-title {
+        flex-basis: 0;
+    }
+
+    #descBlock {
+        margin: 30px 0;
+    }
+
+    .infos-block {
+        display       : flex;
+        flex-direction: row;
+        flex-wrap     : wrap;
+
+        div {
+            margin-right: 10%;
+
+            label {
+                display    : block;
+                font-weight: bold;
+            }
+        }
+    }
+}

@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 import { Experience } from '@models/experience';
 
-import experiencesJSONList from '@json/experiences.json';
+import experiencesListJSON from '@json/experiences.json';
 
 @Injectable({
     providedIn: 'root'
@@ -16,7 +16,7 @@ export class ExperiencesService {
     }
 
     private setListFromJSON = (): void => {
-        for (const exp of experiencesJSONList) {
+        for (const exp of experiencesListJSON) {
             this.experiencesList.push(new Experience(exp));
         }
     }

@@ -49,8 +49,10 @@
         }, {
             "skill": "MS SQL",
             "value": 80
-        },
-        {
+        }, {
+            "skill": "SQLite",
+            "value": 80
+        }, {
             "skill": "MongoDB",
             "value": 60
         }

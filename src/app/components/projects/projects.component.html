@@ -1,3 +1,56 @@
-<p>
-  projects works!
-</p>
+<mat-accordion id="projectsList">
+
+    <mat-expansion-panel *ngFor="let projectComp of projectsList | keyvalue">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                {{projectComp.key | translate}}
+            </mat-panel-title>
+            <mat-panel-description>
+                {{"PROJECT_IN_COMPANY"}} : {{projectComp.key | translate}}
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <mat-accordion>
+            <mat-expansion-panel *ngFor="let project of projectComp.value">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        {{"PROJECT" | translate }} {{project.name}}
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        {{project.shortDescription}}
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+
+                <div class="infos-block">
+                    <div>
+                        <label>{{"YEAR" | translate}}</label>
+                        {{project.year}}
+                    </div>
+                    <div>
+                        <label>{{"DURATION" | translate}}</label>
+                        {{project.duration | amDuration:'milliseconds'}}
+                    </div>
+                    <div *ngIf="project.url">
+                        <label>{{"URL" | translate}}</label>
+                        <a target="_blank" [href]="project.url"> {{project.url}}</a>
+                    </div>
+
+                </div>
+
+                <div id="descBlock">
+                    {{project.description}}
+                </div>
+
+                <div class="infos-block">
+                    <div>
+                        <label>{{"STACK" | translate}}</label>
+                        {{project.stack.join(' - ')}}
+                    </div>
+                </div>
+
+            </mat-expansion-panel>
+        </mat-accordion>
+
+    </mat-expansion-panel>
+
+</mat-accordion>

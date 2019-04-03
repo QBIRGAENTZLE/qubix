@@ -1,0 +1,81 @@
+{
+    "1_PEAKS": [{
+            "name": "Owen",
+            "year": "2018 / 2019",
+            "duration": 10368000000,
+            "shortDescription": "Assistant de recherche pour le client Apollo",
+            "description": "Dans le cadre de ma prestation pour le client Apollo. Développement d'un outil de recherche multi-canaux.",
+            "url": "https://www.owenapp.com/",
+            "stack": [
+                "Angular 7",
+                "NodeJS 10",
+                "Electron 4",
+                "PowerShell",
+                "SQLite"
+            ]
+        },
+        {
+            "name": "Navigateur",
+            "year": "2017 / 2018",
+            "duration": 31536000000,
+            "shortDescription": "Navigateur internet pour le client Apollo",
+            "description": "Dans le cadre de ma prestation pour le client Apollo. Développement d'un navigateur internet.",
+            "url": null,
+            "stack": [
+                "Angular 6",
+                "NodeJS 10",
+                "Electron 4",
+                "SQLite"
+            ]
+        }
+    ],
+    "2_ACTILAN": [{
+            "name": "AIS",
+            "year": "2017",
+            "duration": 10368000000,
+            "shortDescription": "Système de supervision",
+            "description": "Développement d'un nouveau système de supervision du parc informatique des clients.",
+            "url": null,
+            "stack": [
+                "Angular 2",
+                "NodeJS 8",
+                "Electron 1",
+                "PowerShell"
+            ]
+        },
+        {
+            "name": "Extranet",
+            "year": "2016 / 2017",
+            "duration": 15552000000,
+            "shortDescription": "Développement d'un extranet",
+            "description": "Développement d'un extranet afin de fournir aux clients un portail leur permettant de consulter l'ensemble des interventions effectuées par Actilan.",
+            "url": "http://www.actilan.fr/extranet/",
+            "stack": [
+                "AngularJS"
+            ]
+        }
+    ],
+    "3_PERSONNAL": [{
+            "name": "FormAO",
+            "year": "2018",
+            "duration": 604800000,
+            "shortDescription": "Site internet de l'association Form'AO",
+            "description": "Développement du site internet de l'association Form'AO.",
+            "url": "http://www.form-ao.com/",
+            "stack": [
+                "WordPress 5"
+            ]
+        },
+        {
+            "name": "AlPepe",
+            "year": "2018",
+            "duration": 1814400000,
+            "shortDescription": "Site internet du cabinet d'architectes AL PEPE Architectes",
+            "description": "Développement du site internet du cabinet d'architectes AL PEPE Architectes",
+            "url": "http://alpepe-archi.fr/",
+            "stack": [
+                "WordPress 4"
+            ]
+        }
+    ]
+}
