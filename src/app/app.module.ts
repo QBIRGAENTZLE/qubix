@@ -14,6 +14,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 }
 
 // EXTERNAL MODULES IMPORT
+import { BootstrapModule } from './bootstrap.module';
 import { MaterialModule } from './material.module';
 import { MglTimelineModule } from 'angular-mgl-timeline';
 import { MomentModule } from 'ngx-moment';
@@ -48,6 +49,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
     ],
     imports: [
         AppRoutingModule,
+        BootstrapModule,
         BrowserAnimationsModule,
         BrowserModule,
         HttpClientModule,

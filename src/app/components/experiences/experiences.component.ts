@@ -4,7 +4,6 @@ import { ExperiencesService } from 'src/app/providers/experiences.service';
 
 import { Experience } from 'src/app/models/experience';
 
-
 @Component({
     selector: 'app-experiences',
     templateUrl: './experiences.component.html',

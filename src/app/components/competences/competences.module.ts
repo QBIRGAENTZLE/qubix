@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 // NG TRANSLATE IMPORTS
@@ -13,20 +14,29 @@ export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http);
 }
 
+// EXTERNAL MODULES IMPORT
+
 // CUSTOM MODULES IMPORT
-import { MaterialModule } from '../../material.module';
+import { BootstrapModule } from '@app/bootstrap.module';
+import { MaterialModule } from '@app/material.module';
 
 import { CompetencesComponent } from './competences.component';
 import { DevelopmentsCompetencesComponent } from './components/developments-competences/developments-competences.component';
 import { ManagementsCompetencesComponent } from './components/managements-competences/managements-competences.component';
+import { SystemsCompetencesComponent } from './components/systems-competences/systems-competences.component';
+import { LanguagesCompetencesComponent } from './components/languages-competences/languages-competences.component';
 
 @NgModule({
     declarations: [
         CompetencesComponent,
         DevelopmentsCompetencesComponent,
-        ManagementsCompetencesComponent
+        ManagementsCompetencesComponent,
+        SystemsCompetencesComponent,
+        LanguagesCompetencesComponent
     ],
     imports: [
+        BootstrapModule,
+        CommonModule,
         CompRoutingModule,
         MaterialModule,
         HttpClientModule,

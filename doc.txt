@@ -1,3 +1,5 @@
 ANGULAR MATERIAL : https://material.angular.io/components/categories
+MATERIAL ICONS : https://material.io/tools/icons/?style=baseline
 TIMELINE MODULE : https://www.npmjs.com/package/angular-mgl-timeline
 MOMENT MODULE : https://www.npmjs.com/package/ngx-moment
+NG BOOTSTRAP : https://ng-bootstrap.github.io/#/components/accordion/examples

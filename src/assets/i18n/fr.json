@@ -1,9 +1,13 @@
 {
     "COMPETENCES": "Compétences",
     "CONTACT": "Contact",
+    "DEVELOPMENT": "Développement",
     "EXPERIENCES": "Expériences",
     "FORMATION": "Formation",
     "HOME": "Accueil",
+    "MANAGEMENT": "Management",
+    "OTHERS": "Autres",
     "PROJECTS": "Projets",
-    "TRADUCTION_TEST": "Un test de traduction"
+    "TRADUCTION_TEST": "Un test de traduction",
+    "WEB DEVELOPMENT": "Développement Web"
 }

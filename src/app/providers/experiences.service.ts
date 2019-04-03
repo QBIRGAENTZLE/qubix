@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 
-import { Experience } from 'src/app/models/experience';
+import { Experience } from '@models/experience';
 
-import experiencesJSONList from 'src/assets/json/experiences.json';
+import experiencesJSONList from '@json/experiences.json';
 
 @Injectable({
     providedIn: 'root'

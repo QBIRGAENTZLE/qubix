@@ -1,15 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+
+import { SkillsService } from '@providers/skills.service';
 
 @Component({
-  selector: 'app-developments-competences',
-  templateUrl: './developments-competences.component.html',
-  styleUrls: ['./developments-competences.component.scss']
+    selector: 'app-developments-competences',
+    templateUrl: './developments-competences.component.html',
+    styleUrls: ['./developments-competences.component.scss'],
 })
-export class DevelopmentsCompetencesComponent implements OnInit {
 
-  constructor() { }
+export class DevelopmentsCompetencesComponent {
 
-  ngOnInit() {
-  }
+    public webDevSkillsList: {} = {};
 
+    constructor(
+        private skillsService: SkillsService
+    ) {
+        this.webDevSkillsList = this.skillsService.getWebDevSkillsList();
+
+    }
 }

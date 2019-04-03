@@ -1,0 +1,77 @@
+{
+    "1_WEB": [{
+            "skill": "HTML",
+            "value": 100
+        }, {
+            "skill": "CSS",
+            "value": 100
+        },
+        {
+            "skill": "SAAS",
+            "value": 75
+        }, {
+            "skill": "Bootstrap",
+            "value": 85
+        }, {
+            "skill": "PhP7",
+            "value": 65
+        }
+    ],
+    "2_JAVASCRIPT": [{
+            "skill": "Natif",
+            "value": 100
+        }, {
+            "skill": "jQuery",
+            "value": 90
+        }, {
+            "skill": "AngularJS",
+            "value": 50
+        }, {
+            "skill": "Angular(2+)",
+            "value": 80
+        },
+        {
+            "skill": "NodeJS",
+            "value": 65
+        },
+        {
+            "skill": "Electron",
+            "value": 80
+        }
+    ],
+    "3_DATABASE": [{
+            "skill": "MySQL",
+            "value": 80
+        },
+        {
+            "skill": "PostgreSQL",
+            "value": 80
+        }, {
+            "skill": "MS SQL",
+            "value": 80
+        },
+        {
+            "skill": "MongoDB",
+            "value": 60
+        }
+    ],
+    "4_CMS&CRM": [{
+        "skill": "WordPress",
+        "value": 80
+    }, {
+        "skill": "PrestaShop",
+        "value": 40
+    }, {
+        "skill": "Efficy CRM",
+        "value": 100
+    }],
+    "5_OTHERS": [{
+            "skill": "SEO",
+            "value": 60
+        },
+        {
+            "skill": "Google Analytics",
+            "value": 60
+        }
+    ]
+}

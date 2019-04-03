@@ -1,0 +1,53 @@
+{
+    "PROGRAMMING": [{
+            "skill": "Bash",
+            "value": 50
+        },
+        {
+            "skill": "PowerShell",
+            "value": 80
+        },
+        {
+            "skill": "JAVA",
+            "value": 10
+        }
+    ],
+    "OS": [{
+            "skill": "Windows",
+            "value": 75
+        },
+        {
+            "skill": "Ubuntu",
+            "value": 40
+        }
+    ],
+    "SOFTWARE&TOOLS": [{
+            "skill": "Atom",
+            "value": 90
+        },
+        {
+            "skill": "NetBeans",
+            "value": 75
+        },
+        {
+            "skill": "Git/GitLab",
+            "value": 80
+        },
+        {
+            "skill": "Jenkins",
+            "value": 10
+        },
+        {
+            "skill": "Docker",
+            "value": 60
+        },
+        {
+            "skill": "Microsoft Office",
+            "value": 75
+        },
+        {
+            "skill": "PowerPivot",
+            "value": 60
+        }
+    ]
+}

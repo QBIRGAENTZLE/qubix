@@ -1,0 +1,42 @@
+.cards-list {
+    mat-card {
+        display: block;
+        margin : 10px;
+        width  : calc(50% - 20px);
+
+        &:nth-child(odd) {
+            float: left;
+        }
+
+        &:nth-child(even) {
+            float: right;
+        }
+    }
+
+    ngb-progressbar {
+        width: 100%;
+
+        ::ng-deep {
+            .progress-bar {
+                animation: progress 1s ease-in-out;
+            }
+        }
+    }
+
+    ::ng-deep {
+        mat-card-content {
+            mat-grid-list {
+                mat-grid-tile {
+                    .mat-figure {
+                        justify-content: left;
+                    }
+                }
+            }
+        }
+    }
+}
+@keyframes progress {
+    from {
+        width: 0;
+    }
+}
