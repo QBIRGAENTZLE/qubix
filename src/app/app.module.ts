@@ -14,14 +14,15 @@ export function HttpLoaderFactory(http: HttpClient) {
 }
 
 // EXTERNAL MODULES IMPORT
-import { BootstrapModule } from './bootstrap.module';
-import { MaterialModule } from './material.module';
 import { MglTimelineModule } from 'angular-mgl-timeline';
 import { MomentModule } from 'ngx-moment';
 import 'moment/locale/fr';
 
 // CUSTOM MODULES IMPORT
+import { BootstrapModule } from '@app/bootstrap.module';
+import { FAModule } from '@app/fa.module';
 import { LayoutModule } from './components/layoutComponents/layout.module';
+import { MaterialModule } from '@app/material.module';
 
 // ROUTING
 import { AppRoutingModule } from './app-routing.module';
@@ -52,6 +53,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
         BootstrapModule,
         BrowserAnimationsModule,
         BrowserModule,
+        FAModule,
         HttpClientModule,
         LayoutModule,
         MaterialModule,
