@@ -14,6 +14,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 }
 
 // CUSTOM MODULES IMPORT
+import { FAModule } from '@app/fa.module';
 import { MaterialModule } from '../../material.module';
 
 import { FooterComponent } from './footer/footer.component';
@@ -28,6 +29,7 @@ import { HeaderComponent } from './header/header.component';
     ],
     imports: [
         AppRoutingModule,
+        FAModule,
         MaterialModule,
         HttpClientModule,
         TranslateModule.forChild({

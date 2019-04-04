@@ -1,32 +1,41 @@
 @import './styles/colors';
 
 .app-container {
-    display       : flex;
-    flex-direction: column;
-    height        : 100%;
-}
+    background-color: $black21;
+    background-image: linear-gradient(to bottom right, $black43, $black);
+    display         : flex;
+    flex-direction  : column;
+    height          : 100%;
 
-mat-sidenav-container {
-    &.mat-sidenav-container {
-        height: 100%;
-    }
+    mat-sidenav-container {
+        background: none;
+        height    : 100%;
 
-    mat-sidenav {
-        &#mainSideBar {
-            width: 200px;
+        mat-sidenav {
+            &#mainSideBar {
+                background: linear-gradient(to bottom right, $blackTransparent125, $transparent);
+                border    : 0;
+                width     : 250px;
+            }
         }
     }
-}
 
-mat-toolbar {
-    &.toolbar {
-        background: $grey;
+    mat-toolbar {
+        &.toolbar {
+            background: linear-gradient(to left, $blackTransparent125, $blackTransparent25);
+            color     : $white;
 
-        &#footerToolbar {
-            bottom  : 0;
-            display : block;
-            height  : 30px;
-            position: sticky;
+            &#footerToolbar {
+                border-top: 1px solid $blackTransparent125;
+                bottom    : 0;
+                display   : block;
+                height    : 30px;
+                position  : sticky;
+            }
+
+            &#headerToolbar {
+                border-bottom: 1px solid $blackTransparent125;
+            }
         }
     }
 }

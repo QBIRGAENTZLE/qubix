@@ -1,8 +1,26 @@
 <mat-nav-list>
-    <a mat-list-item routerLink="/">{{"HOME" | translate}}</a>
-    <a mat-list-item routerLink="/competences">{{"COMPETENCES" | translate}}</a>
-    <a mat-list-item routerLink="/experiences">{{"EXPERIENCES" | translate}}</a>
-    <a mat-list-item routerLink="/projects">{{"PROJECTS" | translate}}</a>
-    <a mat-list-item routerLink="/formation">{{"FORMATION" | translate}}</a>
-    <a mat-list-item routerLink="/contact">{{"CONTACT" | translate}}</a>
+    <a mat-list-item routerLink="/" routerLinkActive="route-active" [routerLinkActiveOptions]="{ exact: true }">
+        <mat-icon>home</mat-icon>
+        {{"HOME" | translate}}
+    </a>
+    <a mat-list-item routerLink="/competences" routerLinkActive="route-active">
+        <fa-icon [icon]="['fas', 'brain']" size="lg"></fa-icon>
+        {{"COMPETENCES" | translate}}
+    </a>
+    <a mat-list-item routerLink="/experiences" routerLinkActive="route-active">
+        <fa-icon [icon]="['fas', 'building']" size="lg"></fa-icon>
+        {{"EXPERIENCES" | translate}}
+    </a>
+    <a mat-list-item routerLink="/projects" routerLinkActive="route-active">
+        <fa-icon [icon]="['fas', 'file-code']" size="lg"></fa-icon>
+        {{"PROJECTS" | translate}}
+    </a>
+    <a mat-list-item routerLink="/formation" routerLinkActive="route-active">
+        <mat-icon>school</mat-icon>
+        {{"FORMATION" | translate}}
+    </a>
+    <a mat-list-item routerLink="/contact" routerLinkActive="route-active">
+        <mat-icon>email</mat-icon>
+        {{"CONTACT" | translate}}
+    </a>
 </mat-nav-list>

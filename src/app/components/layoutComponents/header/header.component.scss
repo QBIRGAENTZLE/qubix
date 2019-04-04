@@ -1,0 +1,20 @@
+@import 'src/app/styles/colors';
+
+:host {
+    width: 100%;
+}
+
+#langBtn {
+    float: right;
+
+    mat-icon {
+        height: auto;
+
+        ::ng-deep {
+            svg {
+                border       : 1px solid $white;
+                border-radius: 50%;
+            }
+        }
+    }
+}

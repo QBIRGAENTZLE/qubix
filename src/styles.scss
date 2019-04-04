@@ -1,4 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'app/styles/theme';
+@import 'app/styles/colors';
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body,
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Roboto, 'Helvetica Neue', sans-serif;
+    margin     : 0;
+}
+
+button {
+    &:focus {
+        border : 0;
+        outline: 0;
+    }
+}
+
+mat-card,
+mat-expansion-panel {
+    &.mat-card,
+    &.mat-expansion-panel {
+        background: linear-gradient(to top left, $blackTransparent125, $blackTransparent25);
+    }
+}
+
+mat-expansion-panel {
+    mat-expansion-panel-header {
+        &.mat-expansion-panel-header {
+            &.mat-expanded {
+                &:focus {
+                    background: none;
+                }
+            }
+        }
+    }
+}

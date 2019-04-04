@@ -1,9 +1,9 @@
 <div class="app-container">
-    <mat-toolbar color="primary" class="toolbar" id="headerToolbar">
+    <mat-toolbar class="toolbar" id="headerToolbar">
         <app-header (toggleMenuOutput)="toggleMenu()"></app-header>
     </mat-toolbar>
 
-    <mat-sidenav-container class="mat-sidenav-container">
+    <mat-sidenav-container>
         <mat-sidenav id="mainSideBar" #mainSideBar mode="side" opened role="navigation">
             <app-sidebar></app-sidebar>
         </mat-sidenav>

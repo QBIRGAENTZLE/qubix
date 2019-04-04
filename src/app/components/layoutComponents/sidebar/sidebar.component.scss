@@ -1,0 +1,39 @@
+@import 'src/app/styles/colors';
+
+mat-nav-list {
+    a {
+        background: linear-gradient(to right, $blackTransparent25, $transparent);
+        height    : 60px;
+
+        &.route-active,
+        &:hover {
+            background: linear-gradient(to left, $blackTransparent50, $blackTransparent125);
+        }
+
+        &::after {
+            background: linear-gradient(to right, $blackTransparent25, $transparent);
+            content   : '';
+            display   : block;
+            height    : 1px;
+            width     : 100%;
+        }
+
+        &.route-active {
+            font-weight: 590;
+        }
+
+        &::ng-deep {
+            .mat-list-item-content {
+                padding: 0;
+            }
+        }
+
+        fa-icon,
+        mat-icon {
+            height     : 60px;
+            line-height: 60px;
+            text-align : center;
+            width      : 60px;
+        }
+    }
+}
