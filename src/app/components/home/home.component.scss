@@ -1,0 +1,10 @@
+mat-card {
+    margin: 10px;
+
+    #avatar {
+        background-image: url('/assets/images/qbi.png');
+        background-size : cover;
+        height          : 55px;
+        width           : 55px;
+    }
+}
