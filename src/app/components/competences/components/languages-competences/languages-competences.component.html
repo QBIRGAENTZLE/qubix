@@ -4,9 +4,9 @@
         <mat-card-content>
             <mat-grid-list cols="4" rowHeight="40px">
                 <ng-container *ngFor="let skill of languageSkills.value">
-                    <mat-grid-tile>{{skill.label}}</mat-grid-tile>
+                    <mat-grid-tile>{{skill.label | translate}}</mat-grid-tile>
                     <mat-grid-tile colspan="3">
-                        <ngb-progressbar [type]="skill.colorLabel" [value]="skill.value" [striped]="true" [animated]="true">{{skill.level | translate}}</ngb-progressbar>
+                        <ngb-progressbar [ngClass]="{'with-border': skill.value < 100}" [type]="skill.colorLabel" [value]="skill.value" [striped]="true" [animated]="true">{{skill.level | translate}}</ngb-progressbar>
                     </mat-grid-tile>
                 </ng-container>
             </mat-grid-list>

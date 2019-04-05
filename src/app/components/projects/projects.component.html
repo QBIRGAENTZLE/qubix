@@ -3,14 +3,23 @@
     <mat-expansion-panel *ngFor="let projectComp of projectsList | keyvalue">
         <mat-expansion-panel-header>
             <mat-panel-title>
-                {{projectComp.key | translate}}
+                {{"PROJECT_.COMPANY." + projectComp.key | translate}}
             </mat-panel-title>
-            <mat-panel-description>
-                {{"PROJECT_IN_COMPANY"}} : {{projectComp.key | translate}}
-            </mat-panel-description>
+            <ng-container *ngIf="projectComp.key === '3_PERSONNAL'; then persoDesc; else compDesc"></ng-container>
+            <ng-template #compDesc>
+                <mat-panel-description>
+                    {{"PROJECT_.IN_COMPANY" | translate}} {{"PROJECT_.COMPANY." + projectComp.key | translate}}
+                </mat-panel-description>
+            </ng-template>
+            <ng-template #persoDesc>
+                <mat-panel-description>
+                    {{"PROJECT_.PERSONNAL" | translate }}
+                </mat-panel-description>
+            </ng-template>
+
         </mat-expansion-panel-header>
 
-        <mat-accordion>
+        <mat-accordion class="project-accordion">
             <mat-expansion-panel *ngFor="let project of projectComp.value">
                 <mat-expansion-panel-header>
                     <mat-panel-title>

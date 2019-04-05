@@ -14,7 +14,7 @@
     ],
     "OS": [{
             "skill": "Windows",
-            "value": 75
+            "value": 90
         },
         {
             "skill": "Ubuntu",
@@ -30,7 +30,7 @@
             "value": 75
         },
         {
-            "skill": "Git/GitLab",
+            "skill": "Git / GitLab",
             "value": 80
         },
         {

@@ -1,6 +1,10 @@
 @import 'app/styles/theme';
 @import 'app/styles/colors';
 
+a {
+    color: $blue;
+}
+
 body,
 html {
     height: 100%;
@@ -8,6 +12,7 @@ html {
 
 body {
     font-family: Roboto, 'Helvetica Neue', sans-serif;
+    font-weight: 300;
     margin     : 0;
 }
 
@@ -15,6 +20,14 @@ button {
     &:focus {
         border : 0;
         outline: 0;
+    }
+}
+
+mat-card {
+    mat-card-title {
+        &.mat-card-title {
+            font-weight: 300;
+        }
     }
 }
 
@@ -33,6 +46,30 @@ mat-expansion-panel {
                 &:focus {
                     background: none;
                 }
+            }
+        }
+    }
+}
+
+mat-tab-group {
+    &.mat-tab-group {
+        &.mat-primary {
+            .mat-ink-bar {
+                background-color: $blue;
+            }
+        }
+
+        .mat-tab-header {
+            background   : linear-gradient(to right, $blackTransparent25, $blackTransparent125);
+            border-bottom: 1px solid $blackTransparent125;
+        }
+
+        .mat-tab-label {
+            font-weight: 300;
+
+            &.mat-tab-label-active,
+            &:hover {
+                opacity: 1;
             }
         }
     }

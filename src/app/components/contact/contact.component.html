@@ -1,7 +1,10 @@
 <mat-card>
     <mat-card-content>
         <p>
-            {{ "CONTACT.MESSAGE" | translate }} <a target="_blank" href="https://www.linkedin.com/in/quentin-birgaentzle-7441ab10a/">profil LinkedIn <fa-icon [icon]="['fab', 'linkedin']" size="lg"></fa-icon></a>.
+            <span [innerHtml]="'CONTACT_.MESSAGE' | translate"></span>
+            <a target="_blank" href="https://www.linkedin.com/in/quentin-birgaentzle-7441ab10a/"> LinkedIn
+                <fa-icon [icon]="['fab', 'linkedin']" size="lg"></fa-icon>
+            </a>
         </p>
     </mat-card-content>
 </mat-card>

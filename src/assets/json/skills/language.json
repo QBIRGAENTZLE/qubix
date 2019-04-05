@@ -1,27 +1,27 @@
 {
     "ENGLISH": [{
-            "skill": "WRITE",
+            "skill": "WROTE",
             "value": 60
         },
         {
-            "skill": "READ",
+            "skill": "READED",
             "value": 80
         },
         {
-            "skill": "SPEAK",
+            "skill": "SPOKE",
             "value": 35
         }
     ],
     "GERMAN": [{
-            "skill": "WRITE",
+            "skill": "WROTE",
             "value": 40
         },
         {
-            "skill": "READ",
+            "skill": "READED",
             "value": 90
         },
         {
-            "skill": "SPEAK",
+            "skill": "SPOKE",
             "value": 25
         }
     ]

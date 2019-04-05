@@ -1,3 +1,4 @@
 # Qubix
 
-Personnal website [Qubix.fr](http://qubix.fr). STILL IN DEVELOPMENT
+Personnal website [Qubix.fr](http://qubix.fr).  
+Not online yet. Still in development.

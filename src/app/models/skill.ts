@@ -18,10 +18,10 @@ export class Skill {
             this.level = 'NOTIONS';
         } else if (this.value < 75) {
             this.colorLabel = 'warning';
-            this.level = 'INTERMEDIAIRE';
+            this.level = 'INTERMEDIATE';
         } else {
             this.colorLabel = 'success';
-            this.level = 'MAITRISE';
+            this.level = 'MASTER';
         }
     }
 

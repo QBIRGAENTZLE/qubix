@@ -1,3 +1,5 @@
+@import 'src/app/styles/colors';
+
 .cards-list {
     mat-card {
         display: block;
@@ -16,9 +18,37 @@
     ngb-progressbar {
         width: 100%;
 
-        ::ng-deep {
+        &.with-border {
+            &::ng-deep {
+                .progress-bar {
+                    border-right: 2px solid $black;
+                }
+            }
+        }
+
+        &::ng-deep {
+            .progress {
+                background-color: $black43;
+            }
+
             .progress-bar {
-                animation: progress 1s ease-in-out;
+                animation   : progress 1s ease-in-out, progress-bar-stripes 1s linear infinite;
+                font-size   : 14px;
+                font-weight : 400;
+                padding-left: 5px;
+                text-shadow : 1px 1px 1px $black;
+
+                &.bg-danger {
+                    background-color: $red !important;
+                }
+
+                &.bg-success {
+                    background-color: $green !important;
+                }
+
+                &.bg-warning {
+                    background-color: $orange !important;
+                }
             }
         }
     }

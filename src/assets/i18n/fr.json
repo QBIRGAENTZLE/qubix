@@ -2,12 +2,73 @@
     "COMPETENCES": "Compétences",
     "CONTACT": "Contact",
     "DEVELOPMENT": "Développement",
+    "DURATION": "Durée",
+    "ENGLISH": "Anglais",
     "EXPERIENCES": "Expériences",
     "FORMATION": "Formation",
+    "GERMAN": "Allemand",
     "HOME": "Accueil",
+    "HUMAN": "Humain",
+    "HUMAN_MANAGEMENT": "Gestion Humaine",
+    "INTERMEDIATE": "Intermédiaire",
+    "LANGUAGES": "Langues",
     "MANAGEMENT": "Management",
+    "MASTER": "Maîtrise",
+    "MY_CONTACT": "Me contacter",
+    "MY_EXPERIENCE": "Mon expérience",
+    "MY_FORMATION": "Ma formation",
+    "MY_PROJECTS": "Mes projets",
+    "MY_SKILLS": "Mes compétences",
+    "NOTIONS": "Notions",
+    "OS": "Système d'exploitation",
     "OTHERS": "Autres",
+    "PROGRAMMING": "Programmation",
+    "PROJECT": "Projet",
     "PROJECTS": "Projets",
+    "PROJECT_MANAGEMENT": "Gestion de Projet",
+    "READED": "Lu",
+
+    "SOFTWARE&TOOLS": "Logiciels et Outils",
+    "SPOKE": "Parlé",
+    "STACK": "Stack technique",
+    "SYSTEM&SOFTWARE": "Système & Logiciels",
+    "TODAY": "Aujourd'hui",
     "TRADUCTION_TEST": "Un test de traduction",
-    "WEB DEVELOPMENT": "Développement Web"
+    "URL": "Adresse",
+    "WEB DEVELOPMENT": "Développement Web",
+    "WROTE": "Ecris",
+    "YEAR": "Année",
+    "CONTACT_": {
+        "MESSAGE": "Si vous souhaitez me contacter, merci de passer par mon"
+    },
+    "PROJECT_": {
+        "COMPANY": {
+            "1_PEAKS": "Peaks",
+            "2_ACTILAN": "Actilan",
+            "3_PERSONNAL": "Personnel"
+        },
+        "IN_COMPANY": "Projets réalisés au sein de la société",
+        "PERSONNAL": "Projets personnels"
+    },
+    "SKILLS_": {
+        "1_WEB": "Web",
+        "2_JAVASCRIPT": "JavaScript",
+        "3_DATABASE": "Base de données",
+        "4_CMS&CRM": "CMS & CRM",
+        "5_OTHERS": "Autres",
+        "MANAGEMENT": {
+            "AGILE_METH": "Méthodologie Agile",
+            "BUDGETING": "Budgetisation",
+            "FORMATION": "Formation",
+            "INTERVIEW": "Entretien",
+            "MEETING": "Animation réunion",
+            "PROJECT_ANALYSIS": "Analyse de projet",
+            "QUOTE": "Devis",
+            "RECRUITMENT": "Recrutement",
+            "RESSOURCES": "Gestion de ressources",
+            "SPECIFICATIONS": "Cahier des charges",
+            "TEAM": "Gestion d'équipe",
+            "WRITING": "Rédaction"
+        }
+    }
 }

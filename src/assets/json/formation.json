@@ -33,7 +33,7 @@
         },
         "degree": {
             "level": "License Professionnelle",
-            "name": "Système Informatique et Logiciel (SIL): Concepteur-Dévelopeur en Environnement Distribué (CDED)"
+            "name": "Système Informatique et Logiciel (SIL) : Concepteur-Dévelopeur en Environnement Distribué (CDED)"
         },
         "description": "<p>Formation en alternance</p>"
     },
@@ -61,6 +61,6 @@
             "level": "Baccalauréat",
             "name": "Scientifique"
         },
-        "description": ""
+        "description": "Avec mention"
     }
 ]

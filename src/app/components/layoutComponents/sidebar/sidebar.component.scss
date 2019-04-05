@@ -1,6 +1,10 @@
 @import 'src/app/styles/colors';
 
 mat-nav-list {
+    &.mat-list-base {
+        padding-top: 0;
+    }
+
     a {
         background: linear-gradient(to right, $blackTransparent25, $transparent);
         height    : 60px;

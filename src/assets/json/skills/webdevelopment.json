@@ -7,13 +7,13 @@
             "value": 100
         },
         {
-            "skill": "SAAS",
+            "skill": "SASS",
             "value": 75
         }, {
             "skill": "Bootstrap",
             "value": 85
         }, {
-            "skill": "PhP7",
+            "skill": "PhP",
             "value": 65
         }
     ],
@@ -22,13 +22,13 @@
             "value": 100
         }, {
             "skill": "jQuery",
-            "value": 90
+            "value": 85
         }, {
             "skill": "AngularJS",
             "value": 50
         }, {
             "skill": "Angular(2+)",
-            "value": 80
+            "value": 90
         },
         {
             "skill": "NodeJS",
@@ -36,7 +36,7 @@
         },
         {
             "skill": "Electron",
-            "value": 80
+            "value": 90
         }
     ],
     "3_DATABASE": [{

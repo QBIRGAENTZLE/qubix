@@ -1,6 +1,6 @@
 {
-    "HUMAN": [{
-            "skill": "TEAM_MANAGEMENT",
+    "HUMAN_MANAGEMENT": [{
+            "skill": "TEAM",
             "value": 40
         },
         {
@@ -20,7 +20,7 @@
             "value": 40
         }
     ],
-    "PROJECT": [{
+    "PROJECT_MANAGEMENT": [{
             "skill": "PROJECT_ANALYSIS",
             "value": 60
         },
@@ -29,7 +29,7 @@
             "value": 35
         },
         {
-            "skill": "RESSOURCES_MANAGEMENT",
+            "skill": "RESSOURCES",
             "value": 50
         },
         {

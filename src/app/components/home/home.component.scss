@@ -1,10 +1,17 @@
+@import 'src/app/styles/colors';
+
 mat-card {
     margin: 10px;
 
     #avatar {
         background-image: url('/assets/images/qbi.png');
         background-size : cover;
+        border          : 2px solid $black;
         height          : 55px;
         width           : 55px;
+    }
+
+    mat-icon {
+        margin-top: -3px;
     }
 }

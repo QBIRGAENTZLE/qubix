@@ -1,5 +1,28 @@
 @import './colors';
 
-mgl-timeline-entry-dot {
-    background-color: $blue;
+mgl-timeline {
+    ::ng-deep {
+        mgl-timeline-entry {
+            .mgl-timeline-entry-card {
+                background: none;
+            }
+
+            .mgl-timeline-entry-card-header {
+                background: linear-gradient(to right, $blackTransparent25, $blackTransparent125);
+            }
+        }
+
+        mgl-timeline-entry-header {
+            font-weight: 500;
+        }
+
+        mgl-timeline-entry-side {
+            height : 100%;
+            padding: 15px;
+        }
+
+        mgl-timeline-entry-dot {
+            background-color: $blue;
+        }
+    }
 }
