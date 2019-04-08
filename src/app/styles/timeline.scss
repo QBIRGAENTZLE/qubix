@@ -21,6 +21,10 @@ mgl-timeline {
             padding: 15px;
         }
 
+        mgl-timeline-entry-content {
+            background: linear-gradient(to right, $blackTransparent25, $blackTransparent125);
+        }
+
         mgl-timeline-entry-dot {
             background-color: $blue;
         }

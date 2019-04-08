@@ -58,7 +58,7 @@
     "3_PERSONNAL": [{
             "name": "FormAO",
             "year": "2018",
-            "duration": 604800000,
+            "duration": 432000000,
             "shortDescription": "Site internet de l'association Form'AO",
             "description": "Développement du site internet de l'association Form'AO.",
             "url": "http://www.form-ao.com/",
@@ -69,7 +69,7 @@
         {
             "name": "AlPepe",
             "year": "2018",
-            "duration": 1814400000,
+            "duration": 1296000000,
             "shortDescription": "Site internet du cabinet d'architectes AL PEPE Architectes",
             "description": "Développement du site internet du cabinet d'architectes AL PEPE Architectes",
             "url": "http://alpepe-archi.fr/",
