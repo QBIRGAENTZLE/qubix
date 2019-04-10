@@ -1,0 +1,13 @@
+@import '~src/app/styles/colors';
+
+mat-card {
+    &.mat-card {
+        background: linear-gradient(to top left, $blackTransparent125, $blackTransparent25);
+    }
+
+    mat-card-title {
+        &.mat-card-title {
+            font-weight: 300;
+        }
+    }
+}

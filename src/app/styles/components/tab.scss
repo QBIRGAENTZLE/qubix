@@ -1,0 +1,27 @@
+@import '~src/app/styles/colors';
+
+::ng-deep {
+    mat-tab-group {
+        &.mat-tab-group {
+            &.mat-primary {
+                .mat-ink-bar {
+                    background-color: $blue;
+                }
+            }
+
+            .mat-tab-header {
+                background   : linear-gradient(to right, $blackTransparent25, $blackTransparent125);
+                border-bottom: 1px solid $blackTransparent125;
+            }
+
+            .mat-tab-label {
+                font-weight: 300;
+
+                &.mat-tab-label-active,
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

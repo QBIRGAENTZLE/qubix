@@ -67,7 +67,8 @@
                 "Angular 2",
                 "NodeJS 6",
                 "Electron 1",
-                "PowerShell"
+                "PowerShell",
+                "MongoDB"
             ],
             "team": [
                 "1 Développeur"

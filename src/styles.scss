@@ -1,5 +1,5 @@
 @import 'app/styles/theme';
-@import 'app/styles/colors';
+@import '~src/app/styles/colors';
 
 a {
     color: $blue;
@@ -21,61 +21,5 @@ button {
     &:focus {
         border : 0;
         outline: 0;
-    }
-}
-
-mat-card {
-    mat-card-title {
-        &.mat-card-title {
-            font-weight: 300;
-        }
-    }
-}
-
-mat-card,
-mat-expansion-panel {
-    &.mat-card,
-    &.mat-expansion-panel {
-        background: linear-gradient(to top left, $blackTransparent125, $blackTransparent25);
-    }
-}
-
-mat-expansion-panel {
-    mat-expansion-panel-header {
-        &.mat-expansion-panel-header {
-            &.mat-expanded {
-                &:focus {
-                    background: none;
-                }
-            }
-        }
-    }
-
-    .mat-expansion-panel-content {
-        font-weight: 300;
-    }
-}
-
-mat-tab-group {
-    &.mat-tab-group {
-        &.mat-primary {
-            .mat-ink-bar {
-                background-color: $blue;
-            }
-        }
-
-        .mat-tab-header {
-            background   : linear-gradient(to right, $blackTransparent25, $blackTransparent125);
-            border-bottom: 1px solid $blackTransparent125;
-        }
-
-        .mat-tab-label {
-            font-weight: 300;
-
-            &.mat-tab-label-active,
-            &:hover {
-                opacity: 1;
-            }
-        }
     }
 }

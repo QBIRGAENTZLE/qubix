@@ -1,0 +1,23 @@
+@import '~src/app/styles/colors';
+
+::ng-deep {
+    mat-expansion-panel {
+        &.mat-expansion-panel {
+            background: linear-gradient(to top left, $blackTransparent125, $blackTransparent25);
+        }
+
+        mat-expansion-panel-header {
+            &.mat-expansion-panel-header {
+                &.mat-expanded {
+                    &:focus {
+                        background: none;
+                    }
+                }
+            }
+        }
+
+        .mat-expansion-panel-content {
+            font-weight: 300;
+        }
+    }
+}
