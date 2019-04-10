@@ -1,0 +1,28 @@
+{
+    "ENGLISH": [{
+            "skill": "WROTE",
+            "value": 60
+        },
+        {
+            "skill": "READED",
+            "value": 80
+        },
+        {
+            "skill": "SPOKE",
+            "value": 35
+        }
+    ],
+    "GERMAN": [{
+            "skill": "WROTE",
+            "value": 40
+        },
+        {
+            "skill": "READED",
+            "value": 90
+        },
+        {
+            "skill": "SPOKE",
+            "value": 25
+        }
+    ]
+}

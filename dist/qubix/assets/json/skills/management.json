@@ -1,0 +1,65 @@
+{
+    "HUMAN_MANAGEMENT": [{
+            "skill": "TEAM",
+            "value": 40
+        },
+        {
+            "skill": "RECRUITMENT",
+            "value": 40
+        },
+        {
+            "skill": "INTERVIEW",
+            "value": 40
+        },
+        {
+            "skill": "MEETING",
+            "value": 25
+        },
+        {
+            "skill": "FORMATION",
+            "value": 40
+        }
+    ],
+    "PROJECT_MANAGEMENT": [{
+            "skill": "PROJECT_ANALYSIS",
+            "value": 60
+        },
+        {
+            "skill": "AGILE_METH",
+            "value": 35
+        },
+        {
+            "skill": "RESSOURCES",
+            "value": 50
+        },
+        {
+            "skill": "QUOTE",
+            "value": 25
+        },
+        {
+            "skill": "BUDGETING",
+            "value": 25
+        },
+        {
+            "skill": "SPECIFICATIONS",
+            "value": 50
+        },
+        {
+            "skill": "WRITING",
+            "value": 100
+        }
+    ],
+    "SOFTWARE&TOOLS": [{
+            "skill": "Jira",
+            "value": 65
+        },
+        {
+            "skill": "Wrike",
+            "value": 50
+        },
+        {
+            "skill": "Redmine",
+            "value": 30
+        }
+    ]
+}

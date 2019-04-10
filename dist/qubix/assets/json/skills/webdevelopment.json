@@ -1,0 +1,98 @@
+{
+    "1_WEB": [{
+            "skill": "HTML",
+            "value": 100
+        }, {
+            "skill": "CSS",
+            "value": 100
+        },
+        {
+            "skill": "SASS",
+            "value": 75
+        },
+        {
+            "skill": "PhP",
+            "value": 65
+        }
+    ],
+    "2_JAVASCRIPT": [{
+            "skill": "Natif",
+            "value": 100
+        }, {
+            "skill": "jQuery",
+            "value": 85
+        }, {
+            "skill": "AngularJS",
+            "value": 50
+        }, {
+            "skill": "Angular(2+)",
+            "value": 90
+        },
+        {
+            "skill": "NodeJS",
+            "value": 65
+        },
+        {
+            "skill": "Electron",
+            "value": 90
+        }
+    ],
+    "3_LIBRARY&TOOLS": [{
+            "skill": "Bootstrap",
+            "value": 80
+        },
+        {
+            "skill": "Angular Bootstrap",
+            "value": 90
+        },
+        {
+            "skill": "Material Design",
+            "value": 60
+        },
+        {
+            "skill": "Material Angular",
+            "value": 75
+        },
+        {
+            "skill": "Leaflet",
+            "value": 40
+        }
+    ],
+    "4_DATABASE": [{
+            "skill": "MySQL",
+            "value": 80
+        },
+        {
+            "skill": "PostgreSQL",
+            "value": 80
+        }, {
+            "skill": "MS SQL",
+            "value": 80
+        }, {
+            "skill": "SQLite",
+            "value": 80
+        }, {
+            "skill": "MongoDB",
+            "value": 60
+        }
+    ],
+    "5_CMS&CRM": [{
+        "skill": "WordPress",
+        "value": 80
+    }, {
+        "skill": "PrestaShop",
+        "value": 40
+    }, {
+        "skill": "Efficy CRM",
+        "value": 100
+    }],
+    "6_OTHERS": [{
+            "skill": "SEO",
+            "value": 60
+        },
+        {
+            "skill": "Google Analytics",
+            "value": 60
+        }
+    ]
+}

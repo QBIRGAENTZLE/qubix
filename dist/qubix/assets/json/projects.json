@@ -1,0 +1,175 @@
+{
+    "1_PEAKS": [{
+            "name": "Owen",
+            "year": "2018 / 2019",
+            "duration": 10368000000,
+            "shortDescription": "Assistant de recherche multi-canaux",
+            "description": "<p>Prestation pour le client Apollo. Développement d'un logiciel bureau de recherche multi-canaux.</p><p>Logiciel de recherche avancée que l'on peut connecter à divers services web : Drive (GDrive, DropBox, OneDrive), Mails (GMail, Outlook...), Contacts (Google, Outlook...), Médias (Youtube, Spotify...) et qui interroge tous ses services lorsque l'utilisateur effectue une recherche. Comporte également une recherche locale, au sein de l'ordinateur de l'utilisateur (fichiers, mails, contacts...)</p><p>J'ai principalement été en charge du développement des scripts PowerShell permettant au logiciel d'interroger et de récupérer des données depuis l'index du système d'exploitation Windows (fichiers, mails et contacts), puis de développer la partie Angular permettant d'appeler ces scripts, de traiter et retouner les résultats à l'utilisateur.</p>",
+            "url": "https://www.owenapp.com/",
+            "stack": [
+                "Angular 7",
+                "NodeJS 10",
+                "Electron 4",
+                "PowerShell",
+                "SQLite"
+            ],
+            "team": [
+                "1 Lead Développeur",
+                "3 Développeurs",
+                "1 Développeur-Intégrateur",
+                "1 Graphiste"
+            ]
+        },
+        {
+            "name": "Navigateur",
+            "year": "2017 / 2018",
+            "duration": 31536000000,
+            "shortDescription": "Navigateur internet",
+            "description": "<p>Prestation pour le client Apollo. Développement d'un navigateur internet.</p><p>Navigateur internet comprenant toutes les fonctionnalités classiques : navigation, recherche, historique, favoris, téléchargements, navigation privée, gestion d'identifiants, configuration et paramétrage... comprenant également une page d'accueil dynamique et un bloqueur de publicité natif. Projet interrompu par manque de ressources.</p><p>Etant le seul développeur à maitriser Angular au lancement du projet, j'ai été en charge de mettre en place l'architecture de base du projet et de former et assister les autres développeurs de l'équipe au FrameWork Angular. Je me suis également occupé de développer plusieurs fonctionnalités du navigateur.</p>",
+            "url": null,
+            "stack": [
+                "Angular 6",
+                "NodeJS 10",
+                "Electron 4",
+                "SQLite"
+            ],
+            "team": [
+                "1 Lead Développeur",
+                "3 Développeurs",
+                "1 Développeur-Intégrateur"
+            ]
+        },
+        {
+            "name": "NetGeo Web",
+            "year": "2017",
+            "duration": 3628800000,
+            "shortDescription": "POC d'un portage web",
+            "description": "<p>Prestation pour le client GiSmartWare. Etude de faisabilité d'un portage web d'une application client lourd (C#) en Angular.</p><p>Le client lourd possède une centaine de \"fiche entité\" XAML, composé de différents sous-composants XAML. Création en Angular des mêmes sous-composants. Développement d'un script NodeJS, un transpileur de code, qui récupère et parse l'ensemble des fiches XAML, qui récupère l'ensemble des sous-composants XAML de la fiche et qui génère ensuite un composant Angular correspondant, avec les mêmes sous-composants Angular correspondants. Le POC consistait à faire marcher ce transpileur sur seulement quelques fiches et quelques composants XAML, ce qui a été un succès, une autre équipe a ensuite pris la suite du développement.</p>",
+            "url": null,
+            "stack": [
+                "Angular 4",
+                "NodeJS 8",
+                "XAML"
+            ],
+            "team": [
+                "1 Développeur"
+            ]
+        }
+    ],
+    "2_ACTILAN": [{
+            "name": "AIS",
+            "year": "2017",
+            "duration": 10368000000,
+            "shortDescription": "POC d'un nouveau système de supervision",
+            "description": "<p>Développement d'un nouveau système de supervision du parc informatique des clients.</p><p>Projet divisé en trois parties. Développement d'une application desktop, sous Electron, amené à tourner en background sur les ordinateurs et serveurs des clients, exécutant des scripts PowerShell qui récupèrent toutes les informations dont on a besoin et qui les transfèrent à une API interne. Développement de cette API, sous NodeJS et MongoDB, qui récupère, traite et stocke les données réceptionnées. Enfin, développement, sous Angular 2, de l'interface permettant à l'équipe technique de consulter les données de supervision mais également de configurer l'ensemble des logiciels de supervision en leur disant quels scripts PowerShell exécuter et à quelle fréquence.</p><p>Quittant la société avant la fin du projet, il s'agissait de développer un POC, uniquement sur un seul poste interne, installation du logiciel de supervision, récupération de la configuration, exécution des scripts PowerShell, transmission des données, traitement et stockage de ces données, et mise en place d'une interface minimaliste permettant de configurer le logiciel et de consulter les données, tout a été réalisé avec succès. Le POC a été concluant, un autre développeur a pris la suite du projet.</p>",
+            "url": null,
+            "stack": [
+                "Angular 2",
+                "NodeJS 6",
+                "Electron 1",
+                "PowerShell",
+                "MongoDB"
+            ],
+            "team": [
+                "1 Développeur"
+            ]
+        },
+        {
+            "name": "AAS",
+            "year": "2017",
+            "duration": 2592000000,
+            "shortDescription": "Système d'alerte",
+            "description": "<p>Développement d'un logiciel d'alerte, sous Electron, qui tourne en background sur les ordinateurs de nos techniciens réseaux, qui est connecté en permanence à notre intranet technique et dès que celui-ci détecte une anomalie au sein d'une infrastructure d'un client, le logiciel récupère en temps réel l'information, et prévient immédiatement les techniciens via une notification sur leur ordinateur.</p>",
+            "url": null,
+            "stack": [
+                "Electron 1",
+                "NodeJS 6"
+            ],
+            "team": [
+                "1 Développeur"
+            ]
+        },
+        {
+            "name": "RapsiSMS",
+            "year": "2017",
+            "duration": 2592000000,
+            "shortDescription": "API d'envoi de SMS",
+            "description": "<p>Mise en place au sein de la société du logiciel RaspiSMS pour gérer l'envoi de SMS aux clients, cependant, l'API fournie, en PHP, qui permet d'envoyer, consulter, stocker, traiter... les SMS ne convenait pas exactement aux besoins de la société. Développement d'une nouvelle API maison, sous NodeJS, correspondant mieux à nos besoins, qu'on a re-greffé au logiciel d'envoi des SMS en remplacement de l'API standard.</p>",
+            "url": null,
+            "stack": [
+                "NodeJS 6"
+            ],
+            "team": [
+                "1 Développeur"
+            ]
+        },
+        {
+            "name": "Site internet",
+            "year": "2017",
+            "duration": 2592000000,
+            "shortDescription": "Développement du nouveau site internet",
+            "description": "<p>Développement, sous WordPress 4, du nouveau site internet de la société, en remplacement de l'ancien datant de 2013. Avec optimisation mobile et du référencement.</p>",
+            "url": "http://www.actilan.fr",
+            "stack": [
+                "WordPress 4"
+            ],
+            "team": [
+                "1 Développeur"
+            ]
+        },
+        {
+            "name": "Extranet",
+            "year": "2016 / 2017",
+            "duration": 15552000000,
+            "shortDescription": "Développement d'un extranet",
+            "description": "<p>Développement d'un extranet afin de fournir aux clients un portail leur permettant de consulter l'ensemble des interventions effectuées par Actilan.</p><p>Connexion, gestion d'accès, consultation et déclaration d'incidents, consultation des informations de supervision de l'infrastructure informatique, partage de documents, consultation des utilisateurs composant le parc informatique et suivi des dates d'échéances (tout produit pouvant arriver à expiration).</p><p>Il s'agit uniquement d'une application Front, sous Angular 1.6, qui récupère toutes les informations nécessaires depuis notre intranet technique.</p>",
+            "url": "http://www.actilan.fr/extranet/",
+            "stack": [
+                "AngularJS 1.6"
+            ],
+            "team": [
+                "1 Développeur"
+            ]
+        }
+    ],
+    "3_PERSONNAL": [{
+            "name": "Qubix",
+            "year": "2019",
+            "duration": 1209600000,
+            "shortDescription": "Site internet personnel",
+            "description": "<p>Développement de mon site internet personnel sous Angular 7, avec utilisation des outils Material.</p><p>Présentation personnelle, compétences, expériences professionnelles et formations suivies.</p>",
+            "url": "http://qubix.fr",
+            "stack": [
+                "Angular 7"
+            ],
+            "team": [
+                "1 Développeur"
+            ]
+        },
+        {
+            "name": "FormAO",
+            "year": "2018",
+            "duration": 432000000,
+            "shortDescription": "Site internet de l'association Form'AO",
+            "description": "<p>Développement du site internet de l'association Form'AO sous WordPress 5.</p>",
+            "url": "http://www.form-ao.com/",
+            "stack": [
+                "WordPress 5"
+            ],
+            "team": [
+                "1 Développeur"
+            ]
+        },
+        {
+            "name": "AlPepe",
+            "year": "2018",
+            "duration": 1728000000,
+            "shortDescription": "Site internet du cabinet d'architectes AL PEPE Architectes",
+            "description": "<p>Développement du site internet du cabinet d'architectes AL PEPE Architectes sous WordPress 4, avec optimisation mobile et du référencement.</p>",
+            "url": "http://alpepe-archi.fr/",
+            "stack": [
+                "WordPress 4"
+            ]
+        }
+    ]
+}

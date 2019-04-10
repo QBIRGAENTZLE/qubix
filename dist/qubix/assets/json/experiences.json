@@ -1,0 +1,41 @@
+[{
+        "companyName": "Peaks",
+        "date": {
+            "start": "9 October 2017",
+            "end": null
+        },
+        "jobTitle": "Développeur Web Full-Stack",
+        "place": "Lyon (69)",
+        "description": "<p>Développeur JavaScript (Angular, NodeJS, Electron) en prestation auprès de clients finaux</p><p><em>Travail sur divers missions et projets clients :</em></p><ul><li>Pour la société <a href='https://www.gismartware.com/' target='_blank'>GiSmartWare</a> (entreprise éditrice de logiciels cartographiques métiers), mission de 2 mois. Réalisation d'un POC sur la possibilité de migrer un client lourd et ses fonctionnalités (C#) en un client web (Angular4 &amp; NodeJS)</li><li>Pour la société <a href='https://www.apollo-group.fr/' target='_blank'>Apollo</a> (édition, distribution et monétisation de contenus web), mission de 16 mois. Réalisation de plusieurs applications desktop (Angular6/7, NodeJS, Electron)</li></ul>"
+    },
+    {
+        "companyName": "Actilan",
+        "date": {
+            "start": "14 January 2014",
+            "end": "30 September 2017"
+        },
+        "jobTitle": "Développeur Web Alternant",
+        "place": "Lyon (69)",
+        "description": "<p>CDD de 7 mois (en attendant le début de la formation) puis deux Contrats Professionnels dans le cadre de mes formations Développeur Web Full-Stack puis Chef de Projet Informatique, chez IP-Formation et IT-Akademy.</p><p><em>Refonte du Système Informatique de la société :</em></p><ul><li>Mise en place et développement du CRM Efficy</li><li>Réalisation du nouveau site internet (WordPress, PHP7), avec optimisation référencement et mobile</li><li>Assistance à la refonte de l'intranet (Javascript, Dojo)</li><li>Création &amp; Développement d'un Extranet (AngularJS)</li><li>Mise en place et développement du logiciel RaspiSMS. Développement d'une nouvelle API (NodeJS) plus adaptée à nos besoins que celle fournie en standard</li><li>Développement d'un ensemble d'applications afin de mettre en place un nouveau système de supervision de l'infrastructure client (NodeJS, Angular4, Electron, Express, Mongo).</li></ul><p><em>Projets clients :</em></p><ul><li>Mise en place et développement du CRM Efficy</li><li>Développement de sites internet vitrine et E-Commerce (WordPress et PrestaShop)</li></ul>"
+    },
+    {
+        "companyName": "ShopFactory France",
+        "date": {
+            "start": "November 2012",
+            "end": "31 August 2013"
+        },
+        "jobTitle": "Développeur Web Stagiaire",
+        "place": "Strasbourg (67)",
+        "description": "<p>Stage en alternance dans le cadre de la Licence Professionnelle. Prolongé à temps complet durant l'été.</p><p>Développement sur le CRM Maison (Php/MySQL), ajouts et modifications de fonctionnalités.</p>"
+    },
+    {
+        "companyName": "Université de Haute-Alsace (UHA)",
+        "date": {
+            "start": "April 2012",
+            "end": "30 June 2012"
+        },
+        "jobTitle": "Développeur Web Stagiaire",
+        "place": "Mulhouse (68)",
+        "description": "<p>Stage de fin de DUT, effectué à la DSI de l'Université de Haute-Alsace.</p><p>Développement sur l'application gérant l'ensemble de écrans d'affichage répartis au sein de l'UHA, ajout et modifications de fonctionnalités (PhP/MySQL)</p>"
+    }
+]
