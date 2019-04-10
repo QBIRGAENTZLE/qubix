@@ -14,8 +14,10 @@ export function HttpLoaderFactory(http: HttpClient) {
 }
 
 // EXTERNAL MODULES IMPORT
+import { Angulartics2Module } from 'angulartics2';
 import { MomentModule } from 'ngx-moment';
 import 'moment/locale/fr';
+
 
 // CUSTOM MODULES IMPORT
 import { BootstrapModule } from '@app/bootstrap.module';
@@ -57,6 +59,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
         LayoutModule,
         MaterialModule,
         MomentModule,
+        Angulartics2Module.forRoot(),
         TranslateModule.forRoot({
             loader: {
                 provide: TranslateLoader,
