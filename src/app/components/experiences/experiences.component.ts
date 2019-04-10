@@ -14,9 +14,8 @@ export class ExperiencesComponent {
     public experiencesList: Experience[];
 
     constructor(
-        private experiencesService: ExperiencesService
+        private experiencesService: ExperiencesService,
     ) {
         this.experiencesList = this.experiencesService.getExperiencesList();
     }
-
 }

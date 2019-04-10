@@ -9,3 +9,5 @@ NG BOOTSTRAP : https://ng-bootstrap.github.io/#/components/accordion/examples
 
 FONT AWESOME ANGULAR : https://github.com/FortAwesome/angular-fontawesome
 FONT AWESOME ICONS : https://fontawesome.com/icons
+
+THEME : http://envato.pixevil.com/volta/

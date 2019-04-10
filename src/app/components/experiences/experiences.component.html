@@ -1,17 +1,27 @@
-<mgl-timeline>
-    <mgl-timeline-entry *ngFor="let exp of experiencesList">
-        <mgl-timeline-entry-side>
-            {{exp.date.start | amDateFormat:'MMMM YYYY'}} -
-            <ng-container *ngIf="exp.date.end; then endedExp; else inprogressExp"></ng-container>
+<table>
+    <mat-accordion>
+        <tr *ngFor="let exp of experiencesList">
+            <td class="date-block">
+                {{exp.date.start | amDateFormat:'MMMM YYYY'}} -
+                <ng-container *ngIf="exp.date.end; then endedExp; else inprogressExp"></ng-container>
 
-            <ng-template #endedExp> {{exp.date.end | amDateFormat:'MMMM YYYY'}}</ng-template>
-            <ng-template #inprogressExp> {{ "TODAY" | translate}}</ng-template>
-            {{exp.duration | duration}}
-        </mgl-timeline-entry-side>
-        <mgl-timeline-entry-header>{{exp.companyName}} - {{exp.jobTitle}} - {{exp.place}}</mgl-timeline-entry-header>
-        <mgl-timeline-entry-dot [size]="30"></mgl-timeline-entry-dot>
-        <mgl-timeline-entry-content>
-            <div id="expDesc" [innerHTML]="exp.description"></div>
-        </mgl-timeline-entry-content>
-    </mgl-timeline-entry>
-</mgl-timeline>
+                <ng-template #endedExp> {{exp.date.end | amDateFormat:'MMMM YYYY'}}</ng-template>
+                <ng-template #inprogressExp> {{ "TODAY" | translate}}</ng-template>
+                <div>({{exp.duration | duration:['year','month']}})</div>
+            </td>
+            <td class="dot-block">
+                <div class="dot"></div>
+            </td>
+            <td class="exp-block">
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            {{exp.companyName}} - {{exp.jobTitle}} - {{exp.place}}
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="desc-block" [innerHTML]="exp.description"></div>
+                </mat-expansion-panel>
+            </td>
+        </tr>
+    </mat-accordion>
+</table>

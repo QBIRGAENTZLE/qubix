@@ -1,12 +1,26 @@
-<mgl-timeline>
-    <mgl-timeline-entry *ngFor="let form of formationList">
-        <mgl-timeline-entry-side>
-            {{form.years.start }} - {{ form.years.end }}
-        </mgl-timeline-entry-side>
-        <mgl-timeline-entry-header>{{form.degree.level}}, {{form.degree.name}} - {{form.schoolName}} - {{form.place}}</mgl-timeline-entry-header>
-        <mgl-timeline-entry-dot [size]="30"></mgl-timeline-entry-dot>
-        <mgl-timeline-entry-content>
-            <div [innerHTML]="form.description"></div>
-        </mgl-timeline-entry-content>
-    </mgl-timeline-entry>
-</mgl-timeline>
+<table>
+    <mat-accordion>
+        <tr *ngFor="let form of formationList">
+            <td class="date-block">
+                {{form.years.start }} - {{ form.years.end }}
+            </td>
+            <td class="dot-block">
+                <div class="dot"></div>
+            </td>
+            <td class="exp-block">
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            {{form.degree.level}} {{form.degree.name}}
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <p class="place-block">{{form.schoolName}} - {{form.place}}
+                        <ng-container *ngIf="form.url"> - <a [href]="form.url" target="_blank">{{"FORMATION_.WEBSITE" | translate}}</a></ng-container>
+                    </p>
+
+                    <div class="desc-block" [innerHTML]="form.description"></div>
+                </mat-expansion-panel>
+            </td>
+        </tr>
+    </mat-accordion>
+</table>

@@ -18,7 +18,7 @@
         font-weight: 300;
     }
 
-    #descBlock {
+    .desc-block {
         margin: 30px 0;
     }
 
@@ -39,13 +39,13 @@
         flex-wrap     : wrap;
 
         div {
-            margin-right: 10%;
+            margin-bottom: 15px;
+            margin-right : 10%;
 
             label {
-                display       : block;
-                font-size     : 14px;
-                font-weight   : 600;
-                letter-spacing: .5px;
+                display    : block;
+                font-size  : 15px;
+                font-weight: 500;
             }
         }
     }

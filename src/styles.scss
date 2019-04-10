@@ -50,6 +50,10 @@ mat-expansion-panel {
             }
         }
     }
+
+    .mat-expansion-panel-content {
+        font-weight: 300;
+    }
 }
 
 mat-tab-group {

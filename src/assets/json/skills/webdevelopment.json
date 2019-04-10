@@ -9,10 +9,8 @@
         {
             "skill": "SASS",
             "value": 75
-        }, {
-            "skill": "Bootstrap",
-            "value": 85
-        }, {
+        },
+        {
             "skill": "PhP",
             "value": 65
         }
@@ -39,7 +37,28 @@
             "value": 90
         }
     ],
-    "3_DATABASE": [{
+    "3_LIBRARY&TOOLS": [{
+            "skill": "Bootstrap",
+            "value": 80
+        },
+        {
+            "skill": "Angular Bootstrap",
+            "value": 90
+        },
+        {
+            "skill": "Material Design",
+            "value": 60
+        },
+        {
+            "skill": "Material Angular",
+            "value": 75
+        },
+        {
+            "skill": "Leaflet",
+            "value": 40
+        }
+    ],
+    "4_DATABASE": [{
             "skill": "MySQL",
             "value": 80
         },
@@ -57,7 +76,7 @@
             "value": 60
         }
     ],
-    "4_CMS&CRM": [{
+    "5_CMS&CRM": [{
         "skill": "WordPress",
         "value": 80
     }, {
@@ -67,7 +86,7 @@
         "skill": "Efficy CRM",
         "value": 100
     }],
-    "5_OTHERS": [{
+    "6_OTHERS": [{
             "skill": "SEO",
             "value": 60
         },

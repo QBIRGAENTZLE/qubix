@@ -32,6 +32,7 @@
     "SPOKE": "Parlé",
     "STACK": "Stack technique",
     "SYSTEM&SOFTWARE": "Système & Logiciels",
+    "TEAM": "Equipe",
     "TODAY": "Aujourd'hui",
     "TRADUCTION_TEST": "Un test de traduction",
     "URL": "Adresse",
@@ -39,7 +40,11 @@
     "WROTE": "Ecris",
     "YEAR": "Année",
     "CONTACT_": {
-        "MESSAGE": "Si vous souhaitez me contacter, merci de passer par mon"
+        "MESSAGE1": "Si vous souhaitez me contacter, merci de passer par mon",
+        "MESSAGE2": " je réponds rapidement."
+    },
+    "FORMATION_": {
+        "WEBSITE": "Site internet de la formation"
     },
     "PROJECT_": {
         "COMPANY": {
@@ -53,9 +58,10 @@
     "SKILLS_": {
         "1_WEB": "Web",
         "2_JAVASCRIPT": "JavaScript",
-        "3_DATABASE": "Base de données",
-        "4_CMS&CRM": "CMS & CRM",
-        "5_OTHERS": "Autres",
+        "3_LIBRARY&TOOLS": "Librairies & Outils",
+        "4_DATABASE": "Base de données",
+        "5_CMS&CRM": "CMS & CRM",
+        "6_OTHERS": "Autres",
         "MANAGEMENT": {
             "AGILE_METH": "Méthodologie Agile",
             "BUDGETING": "Budgetisation",

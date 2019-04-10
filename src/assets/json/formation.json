@@ -6,23 +6,25 @@
             "end": 2017
         },
         "degree": {
-            "level": "Master 2 (M2)",
+            "level": "Master 2",
             "name": "Chef de Projet Informatique - Spécialité Développement"
         },
-        "description": "<p>Formation en alternance</p><p>Titre de niveau 1</p>"
+        "url": "https://www.it-akademy.fr/formation/chef-de-projets-informatiques",
+        "description": "<p>Formation en alternance - Titre de niveau 1</p><p><i>Mémoire :</i> Projet de mise en place d'un extranet</p><p><ul><li>Ingénierie logicielle et développement</li><li>Conception et administration de bases de données</li><li>Audit et évaluation des SI</li><li>Urbanisation et shéma directeur</li><li>Conduite de projet</li><li>Gestion du changement</li><li>Démarche qualité et industrialisation</li><li>Gestion des ressources et des budgets</li><li>Communication et information</li><li>Entreprenariat</li><li>Législation et droit des technologies informatiques</li></ul></p>"
     },
     {
-        "schoolName": "Ecole IPSSI - Groupe IP-Formation",
+        "schoolName": "IT-Akademy",
         "place": "Lyon (69)",
         "years": {
             "start": 2014,
             "end": 2016
         },
         "degree": {
-            "level": "Master 1 (M1)",
+            "level": "Master 1",
             "name": "Développeur Full-Stack"
         },
-        "description": "<p>Validation également du M1 Administrateur du système d'information - Spécialité Développement</p><p>Formation en alternance</p><p>Titres de niveau 2</p><p>Développement web et mobile </p><p>Php, Angular, NodeJS, JS, Swift, IONIC, API</p><p>Configuration environnement Linux, Vagrant, Docker</p><p>Gestion et suivi de projet</p><p>Projet : Refonte du site internet IPSSI et Développement d'un intranet métier orienté ERP</p><p>Mémoire : Mise en place d'une solution CRM au sein d'une entreprise</p>"
+        "url": "https://www.it-akademy.fr/formation/developpeur-fullstack",
+        "description": "<p>Validation également du M1 Administrateur du Système d'Information - Spécialité Développement</p><p>Formation en alternance - Titres de niveau 2</p><p><i>Projet :</i> Refonte du site internet IPSSI et Développement d'un intranet métier orienté ERP</p><p><i>Mémoire :</i> Mise en place d'une solution CRM au sein d'une entreprise</p><p><ul><li>Développement web et mobile </li><li>Php, Angular, NodeJS, JS, Swift, IONIC, API</li><li>Base de données</li><li>Configuration environnement Linux, Vagrant, Docker</li><li>Gestion et suivi de projet</li></ul></p>"
     },
     {
         "schoolName": "IUT Robert Schuman",
@@ -33,9 +35,10 @@
         },
         "degree": {
             "level": "License Professionnelle",
-            "name": "Système Informatique et Logiciel (SIL) : Concepteur-Dévelopeur en Environnement Distribué (CDED)"
+            "name": "Système Informatique et Logiciel : Concepteur-Dévelopeur en Environnement Distribué"
         },
-        "description": "<p>Formation en alternance</p>"
+        "url": "http://iutrs.unistra.fr/formation/licence-professionnelle/informatique/cdad",
+        "description": "<p>Formation en alternance.</p><p><ul><li>Développement service web</li><li>Développement client web</li><li>Développement client mobile</li><li>Gestion de projets</li><li>Ingénierie des tests</li><li>Sécurité des systèmes d’information</li><li>Ergonomie et communication</li></ul></p>"
     },
     {
         "schoolName": "IUT de Mulhouse",
@@ -48,7 +51,8 @@
             "level": "DUT",
             "name": "Services et Réseaux de Communication (SRC)"
         },
-        "description": ""
+        "url": "http://www.iutmulhouse.uha.fr/formations-initiales-apprentissage/dut/metiers-du-multimedia-et-de-linternet.html",
+        "description": "<p>Aujourd'hui intitulé \"Métiers du Multimédia et de l'Internet\" (MMI).</p><p><ul><li>Information et Communication</li><li>Analyse et ecriture pour les médias numériques</li><li>Gestion de projet</li><li>Infographie (2D, 3D et PAO)</li><li>Production Audiovisuelle</li><li>Infrastructure, administration et sécurité des réseaux</li><li>Programmation et bases de données (Java, HTML, PHP, JavaScript, MySQL)</li></ul></p>"
     },
     {
         "schoolName": "Lycée Bartholdi",

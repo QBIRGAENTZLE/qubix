@@ -37,7 +37,7 @@
                     </div>
                     <div>
                         <label>{{"DURATION" | translate}}</label>
-                        {{project.duration | amDuration:'milliseconds'}}
+                        {{project.duration | duration:['year','month', 'week']}}
                     </div>
                     <div *ngIf="project.url">
                         <label>{{"URL" | translate}}</label>
@@ -46,14 +46,16 @@
 
                 </div>
 
-                <div id="descBlock">
-                    {{project.description}}
-                </div>
+                <div class="desc-block" [innerHtml]="project.description"></div>
 
                 <div class="infos-block">
                     <div>
                         <label>{{"STACK" | translate}}</label>
                         {{project.stack.join(' - ')}}
+                    </div>
+                    <div *ngIf="project.team">
+                        <label>{{"TEAM" | translate}}</label>
+                        {{project.team.join(' - ')}}
                     </div>
                 </div>
 
