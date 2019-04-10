@@ -14,7 +14,6 @@ export function HttpLoaderFactory(http: HttpClient) {
 }
 
 // EXTERNAL MODULES IMPORT
-import { MglTimelineModule } from 'angular-mgl-timeline';
 import { MomentModule } from 'ngx-moment';
 import 'moment/locale/fr';
 
@@ -57,7 +56,6 @@ import { ProjectsComponent } from './components/projects/projects.component';
         HttpClientModule,
         LayoutModule,
         MaterialModule,
-        MglTimelineModule,
         MomentModule,
         TranslateModule.forRoot({
             loader: {
