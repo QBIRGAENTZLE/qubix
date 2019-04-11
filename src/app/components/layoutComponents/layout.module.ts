@@ -6,7 +6,7 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 // ROUTING
-import { AppRoutingModule } from '../../app-routing.module';
+import { AppRoutingModule } from '@app/app-routing.module';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -15,11 +15,11 @@ export function HttpLoaderFactory(http: HttpClient) {
 
 // CUSTOM MODULES IMPORT
 import { FAModule } from '@app/fa.module';
-import { MaterialModule } from '../../material.module';
+import { MaterialModule } from '@app/material.module';
 
-import { FooterComponent } from './footer/footer.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
-import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from '@components/layoutComponents/footer/footer.component';
+import { SidebarComponent } from '@components/layoutComponents/sidebar/sidebar.component';
+import { HeaderComponent } from '@components/layoutComponents/header/header.component';
 
 @NgModule({
     declarations: [

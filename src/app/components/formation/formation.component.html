@@ -14,7 +14,8 @@
                             {{form.degree.level}} {{form.degree.name}}
                         </mat-panel-title>
                     </mat-expansion-panel-header>
-                    <p class="place-block">{{form.schoolName}} - {{form.place}}
+                    <p class="place-block">
+                        {{form.schoolName}} - {{form.place}}
                         <ng-container *ngIf="form.url"> - <a [href]="form.url" target="_blank">{{"FORMATION_.WEBSITE" | translate}}</a></ng-container>
                     </p>
 

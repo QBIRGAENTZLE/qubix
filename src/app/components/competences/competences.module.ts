@@ -20,26 +20,28 @@ export function HttpLoaderFactory(http: HttpClient) {
 import { BootstrapModule } from '@app/bootstrap.module';
 import { MaterialModule } from '@app/material.module';
 
+
+// COMPONENTS IMPORT
 import { CompetencesComponent } from './competences.component';
 import { DevelopmentsCompetencesComponent } from './components/developments-competences/developments-competences.component';
+import { LanguagesCompetencesComponent } from './components/languages-competences/languages-competences.component';
 import { ManagementsCompetencesComponent } from './components/managements-competences/managements-competences.component';
 import { SystemsCompetencesComponent } from './components/systems-competences/systems-competences.component';
-import { LanguagesCompetencesComponent } from './components/languages-competences/languages-competences.component';
 
 @NgModule({
     declarations: [
         CompetencesComponent,
         DevelopmentsCompetencesComponent,
+        LanguagesCompetencesComponent,
         ManagementsCompetencesComponent,
-        SystemsCompetencesComponent,
-        LanguagesCompetencesComponent
+        SystemsCompetencesComponent
     ],
     imports: [
         BootstrapModule,
         CommonModule,
         CompRoutingModule,
-        MaterialModule,
         HttpClientModule,
+        MaterialModule,
         TranslateModule.forChild({
             loader: {
                 provide: TranslateLoader,

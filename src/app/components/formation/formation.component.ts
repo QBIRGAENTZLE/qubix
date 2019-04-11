@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
-import { FormationService } from 'src/app/providers/formation.service';
+import { FormationService } from '@providers/formation.service';
 
-import { Formation } from 'src/app/models/formation';
+import { Formation } from '@models/formation';
 
 @Component({
     selector: 'app-formation',

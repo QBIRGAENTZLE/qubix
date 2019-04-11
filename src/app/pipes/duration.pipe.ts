@@ -17,33 +17,27 @@ export class DurationPipe implements PipeTransform {
             if (args.includes('year')) {
                 if (args.indexOf('year') === (args.length - 1)) {
                     years = Math.round(duration / 31536000);
-
                 } else {
                     years = Math.trunc(duration / 31536000);
                     remainingTime = duration % 31536000;
-
                 }
             }
 
             if (args.includes('month')) {
                 if (args.indexOf('month') === (args.length - 1)) {
                     months = Math.round(remainingTime / 2592000);
-
                 } else {
                     months = Math.trunc(remainingTime / 2592000);
                     remainingTime = remainingTime % 2592000;
-
                 }
             }
 
             if (args.includes('week')) {
                 if (args.indexOf('week') === (args.length - 1)) {
                     weeks = Math.round(remainingTime / 604800);
-
                 } else {
                     weeks = Math.trunc(remainingTime / 604800);
                     remainingTime = remainingTime % 604800;
-
                 }
             }
 

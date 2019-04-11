@@ -1,4 +1,5 @@
 export class Formation {
+
     schoolName: string;
     place: string;
     years: { start: number, end: number } = { start: null, end: null };

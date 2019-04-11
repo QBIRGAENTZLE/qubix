@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
-import { ExperiencesService } from 'src/app/providers/experiences.service';
+import { ExperiencesService } from '@providers/experiences.service';
 
-import { Experience } from 'src/app/models/experience';
+import { Experience } from '@models/experience';
 
 @Component({
     selector: 'app-experiences',

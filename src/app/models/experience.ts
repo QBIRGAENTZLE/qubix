@@ -21,6 +21,5 @@ export class Experience {
         this.description = exp.description;
         this.jobTitle = exp.jobTitle;
         this.place = exp.place;
-
     }
 }
