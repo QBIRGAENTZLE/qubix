@@ -7,6 +7,7 @@ import projectsListJSON from '@json/projects.json';
 @Injectable({
     providedIn: 'root'
 })
+
 export class ProjectsService {
 
     private projectsList: {} = {};

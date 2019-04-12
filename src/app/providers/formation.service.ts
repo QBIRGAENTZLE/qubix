@@ -7,6 +7,7 @@ import formationJSONList from 'src/assets/json/formation.json';
 @Injectable({
     providedIn: 'root'
 })
+
 export class FormationService {
 
     private formationList: Formation[] = [];

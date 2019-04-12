@@ -135,7 +135,7 @@
     "3_PERSONNAL": [{
             "name": "Qubix",
             "year": "2019",
-            "duration": 1209600000,
+            "duration": 1728000000,
             "shortDescription": "Site internet personnel",
             "description": "<p>Développement de mon site internet personnel sous Angular 7, avec utilisation des outils Material.</p><p>Présentation personnelle, compétences, expériences professionnelles et formations suivies.</p>",
             "url": "http://qubix.fr",

@@ -7,6 +7,7 @@ import experiencesListJSON from '@json/experiences.json';
 @Injectable({
     providedIn: 'root'
 })
+
 export class ExperiencesService {
 
     private experiencesList: Experience[] = [];
