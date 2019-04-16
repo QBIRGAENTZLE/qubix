@@ -2,12 +2,13 @@
     <mat-card *ngFor="let webDevSkills of webDevSkillsList | keyvalue">
         <mat-card-title>{{"SKILLS_." + webDevSkills.key | translate}}</mat-card-title>
         <mat-card-content>
-            <mat-grid-list cols="4" rowHeight="40px">
+            <mat-grid-list [cols]="nbCols" [rowHeight]="rowHeight">
                 <ng-container *ngFor="let skill of webDevSkills.value">
                     <mat-grid-tile>{{skill.label}}</mat-grid-tile>
-                    <mat-grid-tile colspan="3">
+                    <mat-grid-tile [colspan]="colspan">
                         <ngb-progressbar [ngClass]="{'with-border': skill.value < 100}" [type]="skill.colorLabel" [value]="skill.value" [striped]="true" [animated]="true">{{skill.level | translate}}</ngb-progressbar>
                     </mat-grid-tile>
+                    <mat-grid-tile *responsive="{bootstrap:['xs', 'sm', 'md']}"></mat-grid-tile>
                 </ng-container>
             </mat-grid-list>
         </mat-card-content>

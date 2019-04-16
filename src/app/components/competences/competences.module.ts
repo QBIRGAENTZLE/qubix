@@ -15,11 +15,11 @@ export function HttpLoaderFactory(http: HttpClient) {
 }
 
 // EXTERNAL MODULES IMPORT
+import { ResponsiveModule } from 'ngx-responsive';
 
 // CUSTOM MODULES IMPORT
 import { BootstrapModule } from '@app/bootstrap.module';
 import { MaterialModule } from '@app/material.module';
-
 
 // COMPONENTS IMPORT
 import { CompetencesComponent } from './competences.component';
@@ -42,6 +42,7 @@ import { SystemsCompetencesComponent } from './components/systems-competences/sy
         CompRoutingModule,
         HttpClientModule,
         MaterialModule,
+        ResponsiveModule,
         TranslateModule.forChild({
             loader: {
                 provide: TranslateLoader,

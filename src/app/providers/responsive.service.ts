@@ -11,6 +11,7 @@ import { ResponsiveSizeInfoRx } from 'ngx-responsive';
 export class ResponsiveService implements OnDestroy {
 
     private responsiveSize: string;
+    private responsiveSizeSubject: Subject<string> = new Subject();
     private sidebarHideSubject: Subject<boolean> = new Subject();
 
     constructor(
@@ -22,6 +23,7 @@ export class ResponsiveService implements OnDestroy {
         this.responsiveSizeInfoRx.getResponsiveSize.subscribe(size => {
             console.log('RESPONSIVE SIZE', size);
             this.responsiveSize = size;
+            this.responsiveSizeSubject.next(size);
 
             if (this.isMobileSize()) {
                 this.sidebarHideSubject.next(true);
@@ -65,12 +67,32 @@ export class ResponsiveService implements OnDestroy {
         }
     }
 
-    public isMobileSize = (): boolean => {
-        if (this.responsiveSize === 'xs' || this.responsiveSize === 'sm') {
+    public isSMSize = (): boolean => {
+        if (this.responsiveSize === 'sm') {
             return true;
         } else {
             return false;
         }
+    }
+
+    public isMDSize = (): boolean => {
+        if (this.responsiveSize === 'md') {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public isMobileSize = (): boolean => {
+        if (this.isXSSize() || this.isSMSize()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public obsResponsiveSize = (): Observable<string> => {
+        return this.responsiveSizeSubject.asObservable();
     }
 
     public obsSidebarHide = (): Observable<boolean> => {
