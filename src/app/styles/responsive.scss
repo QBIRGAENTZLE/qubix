@@ -1,0 +1,15 @@
+@media (max-width: 575px) {
+    @import 'responsive/xs';
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    @import 'responsive/sm';
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    @import 'responsive/md';
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    @import 'responsive/lg';
+}
+@media (min-width: 1200px) {
+    @import 'responsive/xl';
+}

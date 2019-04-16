@@ -1,10 +1,10 @@
 {
     "1_WEB": [{
             "skill": "HTML",
-            "value": 100
+            "value": 90
         }, {
             "skill": "CSS",
-            "value": 100
+            "value": 85
         },
         {
             "skill": "SASS",

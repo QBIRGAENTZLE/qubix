@@ -1,0 +1,27 @@
+.app-container {
+    mat-sidenav-container {
+        mat-sidenav {
+            &#mainSideBar {
+                width: 200px;
+            }
+        }
+    }
+
+    :host(app-competences) {
+        ::ng-deep {
+            .cards-list {
+                mat-card {
+                    width: calc(50% - 20px);
+
+                    &:nth-child(odd) {
+                        float: left;
+                    }
+
+                    &:nth-child(even) {
+                        float: right;
+                    }
+                }
+            }
+        }
+    }
+}

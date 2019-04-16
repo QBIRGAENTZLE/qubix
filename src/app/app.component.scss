@@ -1,4 +1,5 @@
 @import '~src/app/styles/colors';
+@import 'responsive';
 
 .app-container {
     background-color: $black21;
@@ -15,7 +16,6 @@
             &#mainSideBar {
                 background: linear-gradient(to bottom right, $blackTransparent125, $transparent);
                 border    : 0;
-                width     : 250px;
             }
         }
     }

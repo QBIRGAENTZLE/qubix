@@ -2,7 +2,7 @@
     <mat-card *ngFor="let managementSkills of managementSkillsList | keyvalue">
         <mat-card-title>{{managementSkills.key | translate}}</mat-card-title>
         <mat-card-content>
-            <mat-grid-list cols="4" rowHeight="40px">
+            <mat-grid-list cols="4" [rowHeight]="rowHeight">
                 <ng-container *ngFor="let skill of managementSkills.value">
                     <mat-grid-tile>
                         <ng-container *ngIf="managementSkills.key === 'SOFTWARE&TOOLS'; then noTrad; else trad"></ng-container>
@@ -10,7 +10,7 @@
                         <ng-template #trad>{{"SKILLS_.MANAGEMENT."+skill.label | translate}}</ng-template>
 
                     </mat-grid-tile>
-                    <mat-grid-tile colspan="3">
+                    <mat-grid-tile [colspan]="colspan">
                         <ngb-progressbar [ngClass]="{'with-border': skill.value < 100}" [type]="skill.colorLabel" [value]="skill.value" [striped]="true" [animated]="true">{{skill.level | translate}}</ngb-progressbar>
                     </mat-grid-tile>
                 </ng-container>

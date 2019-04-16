@@ -4,7 +4,7 @@
     </mat-toolbar>
 
     <mat-sidenav-container>
-        <mat-sidenav id="mainSideBar" #mainSideBar mode="side" opened role="navigation">
+        <mat-sidenav id="mainSideBar" #mainSideBar mode="side" [opened]="sidebarOpen" role="navigation">
             <app-sidebar></app-sidebar>
         </mat-sidenav>
 

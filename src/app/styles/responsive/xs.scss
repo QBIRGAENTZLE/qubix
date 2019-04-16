@@ -1,0 +1,33 @@
+.app-container {
+    mat-sidenav-container {
+        mat-sidenav {
+            &#mainSideBar {
+                width: 100%;
+            }
+        }
+    }
+
+    :host(app-home) {
+        mat-card {
+            mat-card-actions {
+                button {
+                    &.mat-button {
+                        display: block;
+                        margin : 0;
+                    }
+                }
+            }
+        }
+    }
+
+    :host(app-competences) {
+        ::ng-deep {
+            .cards-list {
+                mat-card {
+                    float: none;
+                    width: auto;
+                }
+            }
+        }
+    }
+}

@@ -17,6 +17,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 import { Angulartics2Module } from 'angulartics2';
 import { MomentModule } from 'ngx-moment';
 import 'moment/locale/fr';
+import { ResponsiveModule } from 'ngx-responsive';
 
 // CUSTOM MODULES IMPORT
 import { BootstrapModule } from '@app/bootstrap.module';
@@ -49,6 +50,7 @@ import { ProjectsComponent } from '@components/projects/projects.component';
         ProjectsComponent
     ],
     imports: [
+        Angulartics2Module.forRoot(),
         AppRoutingModule,
         BootstrapModule,
         BrowserAnimationsModule,
@@ -58,7 +60,16 @@ import { ProjectsComponent } from '@components/projects/projects.component';
         LayoutModule,
         MaterialModule,
         MomentModule,
-        Angulartics2Module.forRoot(),
+        ResponsiveModule.forRoot({
+            breakPoints: {
+                xs: { max: 575 },
+                sm: { min: 576, max: 767 },
+                md: { min: 768, max: 991 },
+                lg: { min: 992, max: 1199 },
+                xl: { min: 1200 }
+            },
+            debounceTime: 100
+        }),
         TranslateModule.forRoot({
             loader: {
                 provide: TranslateLoader,
