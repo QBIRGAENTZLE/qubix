@@ -1,27 +1,58 @@
-<table class='timeline-table'>
-    <mat-accordion>
-        <tr *ngFor="let exp of experiencesList">
-            <td class="date-block">
+<ng-container *ngIf="isMobileSize; then mobileContainer else desktopContainer"></ng-container>
+
+<ng-template #mobileContainer>
+    <div id="mobileTimelineContainer">
+        <mat-accordion *ngFor="let exp of experiencesList">
+            <div class="date-block">
                 {{exp.date.start | amDateFormat:'MMMM YYYY'}} -
                 <ng-container *ngIf="exp.date.end; then endedExp; else inprogressExp"></ng-container>
 
                 <ng-template #endedExp> {{exp.date.end | amDateFormat:'MMMM YYYY'}}</ng-template>
                 <ng-template #inprogressExp> {{ "TODAY" | translate}}</ng-template>
-                <div>({{exp.duration | duration:['year','month']}})</div>
-            </td>
-            <td class="dot-block">
-                <div class="dot"></div>
-            </td>
-            <td class="exp-block">
+                ({{exp.duration | duration:['year','month']}})
+            </div>
+            <div class="exp-block">
                 <mat-expansion-panel>
                     <mat-expansion-panel-header>
                         <mat-panel-title>
                             {{exp.companyName}} - {{exp.jobTitle}} - {{exp.place}}
                         </mat-panel-title>
                     </mat-expansion-panel-header>
-                    <div class="desc-block" [innerHTML]="exp.description"></div>
+                    <div class="desc-block"
+                        [innerHTML]="exp.description"></div>
                 </mat-expansion-panel>
-            </td>
-        </tr>
-    </mat-accordion>
-</table>
+            </div>
+        </mat-accordion>
+    </div>
+</ng-template>
+
+<ng-template #desktopContainer>
+    <table class='timeline-table'>
+        <mat-accordion>
+            <tr *ngFor="let exp of experiencesList">
+                <td class="date-block">
+                    {{exp.date.start | amDateFormat:'MMMM YYYY'}} -
+                    <ng-container *ngIf="exp.date.end; then endedExp; else inprogressExp"></ng-container>
+
+                    <ng-template #endedExp> {{exp.date.end | amDateFormat:'MMMM YYYY'}}</ng-template>
+                    <ng-template #inprogressExp> {{ "TODAY" | translate}}</ng-template>
+                    <div>({{exp.duration | duration:['year','month']}})</div>
+                </td>
+                <td class="dot-block">
+                    <div class="dot"></div>
+                </td>
+                <td class="exp-block">
+                    <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                {{exp.companyName}} - {{exp.jobTitle}} - {{exp.place}}
+                            </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <div class="desc-block"
+                            [innerHTML]="exp.description"></div>
+                    </mat-expansion-panel>
+                </td>
+            </tr>
+        </mat-accordion>
+    </table>
+</ng-template>

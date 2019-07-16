@@ -1,0 +1,21 @@
+#mobileTimelineContainer {
+    mat-accordion {
+        mat-expansion-panel-header {
+            min-height: 48px;
+        }
+    }
+
+    .date-block {
+        margin: 30px 0 5px;
+
+        &:before {
+            background: $blue;
+            border-radius: 50%;
+            content: '\A';
+            display: inline-block;
+            height: 10px;
+            margin: 0 10px;
+            width: 10px;
+        }
+    }
+}

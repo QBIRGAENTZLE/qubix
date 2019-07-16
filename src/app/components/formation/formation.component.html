@@ -1,27 +1,63 @@
-<table class='timeline-table'>
-    <mat-accordion>
-        <tr *ngFor="let form of formationList">
-            <td class="date-block">
+<ng-container *ngIf="isMobileSize; then mobileContainer else desktopContainer"></ng-container>
+
+<ng-template #mobileContainer>
+    <div id="mobileTimelineContainer">
+        <mat-accordion *ngFor="let form of formationList">
+            <div class="date-block">
                 {{form.years.start }} - {{ form.years.end }}
-            </td>
-            <td class="dot-block">
-                <div class="dot"></div>
-            </td>
-            <td class="exp-block">
+            </div>
+
+            <div class="exp-block">
                 <mat-expansion-panel>
-                    <mat-expansion-panel-header>
+                    <mat-expansion-panel-header [collapsedHeight]="'auto'">
                         <mat-panel-title>
                             {{form.degree.level}} {{form.degree.name}}
                         </mat-panel-title>
                     </mat-expansion-panel-header>
                     <p class="place-block">
                         {{form.schoolName}} - {{form.place}}
-                        <ng-container *ngIf="form.url"> - <a [href]="form.url" target="_blank">{{"FORMATION_.WEBSITE" | translate}}</a></ng-container>
+                        <ng-container *ngIf="form.url"> - <a [href]="form.url"
+                                target="_blank">{{"FORMATION_.WEBSITE" | translate}}</a></ng-container>
                     </p>
 
-                    <div class="desc-block" [innerHTML]="form.description"></div>
+                    <div class="desc-block"
+                        [innerHTML]="form.description"></div>
                 </mat-expansion-panel>
-            </td>
-        </tr>
-    </mat-accordion>
-</table>
+            </div>
+        </mat-accordion>
+
+    </div>
+
+</ng-template>
+
+<ng-template #desktopContainer>
+    <table class='timeline-table'>
+        <mat-accordion>
+            <tr *ngFor="let form of formationList">
+                <td class="date-block">
+                    {{form.years.start }} - {{ form.years.end }}
+                </td>
+                <td class="dot-block">
+                    <div class="dot"></div>
+                </td>
+                <td class="exp-block">
+                    <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                {{form.degree.level}} {{form.degree.name}}
+                            </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <p class="place-block">
+                            {{form.schoolName}} - {{form.place}}
+                            <ng-container *ngIf="form.url"> - <a [href]="form.url"
+                                    target="_blank">{{"FORMATION_.WEBSITE" | translate}}</a></ng-container>
+                        </p>
+
+                        <div class="desc-block"
+                            [innerHTML]="form.description"></div>
+                    </mat-expansion-panel>
+                </td>
+            </tr>
+        </mat-accordion>
+    </table>
+</ng-template>

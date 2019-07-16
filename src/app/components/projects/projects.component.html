@@ -41,12 +41,14 @@
                     </div>
                     <div *ngIf="project.url">
                         <label>{{"URL" | translate}}</label>
-                        <a target="_blank" [href]="project.url"> {{project.url}}</a>
+                        <a target="_blank"
+                            [href]="project.url"> {{project.url}}</a>
                     </div>
 
                 </div>
 
-                <div class="desc-block" [innerHtml]="project.description"></div>
+                <div class="desc-block"
+                    [innerHtml]="project.description"></div>
 
                 <div class="infos-block">
                     <div>
