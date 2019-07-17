@@ -1,7 +1,7 @@
 {
     "HUMAN_MANAGEMENT": [{
             "skill": "TEAM",
-            "value": 40
+            "value": 45
         },
         {
             "skill": "RECRUITMENT",
@@ -13,7 +13,7 @@
         },
         {
             "skill": "MEETING",
-            "value": 25
+            "value": 30
         },
         {
             "skill": "FORMATION",
@@ -50,6 +50,9 @@
         }
     ],
     "SOFTWARE&TOOLS": [{
+            "skill": "Trello",
+            "value": 75
+        }, {
             "skill": "Jira",
             "value": 65
         },

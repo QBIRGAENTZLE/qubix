@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Subscription } from 'rxjs';
 
 import { ProjectsService } from '@providers/projects.service';
 import { ResponsiveService } from '@providers/responsive.service';
@@ -13,6 +12,7 @@ import { ResponsiveService } from '@providers/responsive.service';
 export class ProjectsComponent {
 
     public projectsList: {} = {};
+    public isNaN = isNaN;
 
     constructor(
         private projectsService: ProjectsService,
@@ -21,6 +21,5 @@ export class ProjectsComponent {
     ) {
         this.projectsList = this.projectsService.getProjectsList();
     }
-
 
 }

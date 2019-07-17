@@ -48,14 +48,19 @@
                     {{project.shortDescription}}
                 </p>
                 <div class="infos-block">
-
                     <div>
                         <label>{{"YEAR" | translate}}</label>
                         {{project.year}}
                     </div>
                     <div>
                         <label>{{"DURATION" | translate}}</label>
-                        {{project.duration | duration:['year','month', 'week']}}
+                        <ng-container *ngIf="isNaN(project.duration); then durationTxtBlock; else durationBlock"></ng-container>
+                        <ng-template #durationBlock>
+                            {{project.duration | duration:['year','month', 'week']}}
+                        </ng-template>
+                        <ng-template #durationTxtBlock>
+                            {{project.duration}}
+                        </ng-template>
                     </div>
                     <div *ngIf="project.url">
                         <label>{{"URL" | translate}}</label>
