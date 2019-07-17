@@ -21,7 +21,6 @@ export class ResponsiveService implements OnDestroy {
         this.setInitialSize();
         this.responsiveSizeInfoRx.connect();
         this.responsiveSizeInfoRx.getResponsiveSize.subscribe(size => {
-            console.log('RESPONSIVE SIZE', size);
             this.responsiveSize = size;
             this.responsiveSizeSubject.next(size);
 

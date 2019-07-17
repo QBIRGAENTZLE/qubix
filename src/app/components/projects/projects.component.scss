@@ -1,4 +1,5 @@
 @import 'components/expansion';
+@import 'src/app/styles/colors';
 
 #projectsList {
     mat-expansion-panel {
@@ -10,18 +11,23 @@
     }
 
     mat-panel-description {
-        font-size  : 16px;
+        font-size: 16px;
         line-height: 1.9;
     }
 
     mat-panel-description,
     mat-panel-title {
-        flex-basis : 0;
+        flex-basis: 0;
         font-weight: 300;
     }
 
     .desc-block {
         margin: 30px 0;
+    }
+
+    .mobile-project-description {
+        color: $whiteTransparent70;
+        margin: 5px 0;
     }
 
     .project-accordion {
@@ -30,23 +36,23 @@
         }
 
         mat-panel-description {
-            font-size  : 14px;
+            font-size: 14px;
             line-height: 1.5;
         }
     }
 
     .infos-block {
-        display       : flex;
+        display: flex;
         flex-direction: row;
-        flex-wrap     : wrap;
+        flex-wrap: wrap;
 
         div {
             margin-bottom: 15px;
-            margin-right : 10%;
+            margin-right: 10%;
 
             label {
-                display    : block;
-                font-size  : 15px;
+                display: block;
+                font-size: 15px;
                 font-weight: 500;
             }
         }
