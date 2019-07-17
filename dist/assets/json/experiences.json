@@ -6,7 +6,7 @@
         },
         "jobTitle": "Développeur Web Full-Stack",
         "place": "Lyon (69)",
-        "description": "<p>Développeur JavaScript (Angular, NodeJS, Electron) en prestation auprès de clients finaux</p><p><em>Travail sur divers missions et projets clients :</em></p><ul><li>Pour la société <a href='https://www.gismartware.com/' target='_blank'>GiSmartWare</a> (entreprise éditrice de logiciels cartographiques métiers), mission de 2 mois. Réalisation d'un POC sur la possibilité de migrer un client lourd et ses fonctionnalités (C#) en un client web (Angular4 &amp; NodeJS)</li><li>Pour la société <a href='https://www.apollo-group.fr/' target='_blank'>Apollo</a> (édition, distribution et monétisation de contenus web), mission de 16 mois. Réalisation de plusieurs applications desktop (Angular6/7, NodeJS, Electron)</li></ul>"
+        "description": "<p>Développeur JavaScript (Angular, NodeJS, Electron) en prestation auprès de clients finaux</p><p><em>Travail sur divers missions et projets clients :</em></p><ul><li>Pour la société <a href='https://www.gismartware.com/' target='_blank'>GiSmartWare</a> (entreprise éditrice de logiciels cartographiques métiers), mission de 2 mois. Réalisation d'un POC sur la possibilité de migrer un client lourd et ses fonctionnalités (C#) en un client web (Angular4 &amp; NodeJS)</li><li>Pour la société <a href='https://www.apollo-group.fr/' target='_blank'>Apollo</a> (édition, distribution et monétisation de contenus web), mission de 16 mois. Réalisation de plusieurs applications desktop (Angular6/7, NodeJS, Electron)</li><li>Pour la société <a href='https://euronews.com/' target='_blank'>Euronews</a> (chaîne et site d'information internationale en continu), mission en cours depuis avril 2019, développement sur l'ensemble d'applications gérant la publication des articles du site internet Euronews.com (Angular7, NodeJS)</li></ul>"
     },
     {
         "companyName": "Actilan",
@@ -36,6 +36,6 @@
         },
         "jobTitle": "Développeur Web Stagiaire",
         "place": "Mulhouse (68)",
-        "description": "<p>Stage de fin de DUT, effectué à la DSI de l'Université de Haute-Alsace.</p><p>Développement sur l'application gérant l'ensemble de écrans d'affichage répartis au sein de l'UHA, ajout et modifications de fonctionnalités (PhP/MySQL)</p>"
+        "description": "<p>Stage de fin de DUT, effectué à la DSI de l'Université de Haute-Alsace.</p><p>Développement sur l'application gérant l'ensemble des écrans d'affichage répartis au sein de l'UHA, ajout et modifications de fonctionnalités (PhP/MySQL)</p>"
     }
 ]

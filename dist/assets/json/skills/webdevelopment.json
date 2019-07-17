@@ -4,33 +4,33 @@
             "value": 90
         }, {
             "skill": "CSS",
-            "value": 85
+            "value": 90
         },
         {
             "skill": "SASS",
-            "value": 75
+            "value": 70
         },
         {
             "skill": "PhP",
-            "value": 65
+            "value": 50
         }
     ],
     "2_JAVASCRIPT": [{
             "skill": "Natif",
-            "value": 100
+            "value": 90
         }, {
             "skill": "jQuery",
-            "value": 85
+            "value": 80
         }, {
             "skill": "AngularJS",
             "value": 50
         }, {
             "skill": "Angular(2+)",
-            "value": 90
+            "value": 85
         },
         {
             "skill": "NodeJS",
-            "value": 65
+            "value": 60
         },
         {
             "skill": "Electron",
@@ -38,6 +38,14 @@
         }
     ],
     "3_LIBRARY&TOOLS": [{
+            "skill": "GraphQL",
+            "value": 25
+        },
+        {
+            "skill": "Sequelize",
+            "value": 50
+        },
+        {
             "skill": "Bootstrap",
             "value": 80
         },
@@ -51,6 +59,10 @@
         },
         {
             "skill": "Material Angular",
+            "value": 75
+        },
+        {
+            "skill": "Clarity Design",
             "value": 75
         },
         {
@@ -74,6 +86,9 @@
         }, {
             "skill": "MongoDB",
             "value": 60
+        }, {
+            "skill": "ElasticSearch",
+            "value": 20
         }
     ],
     "5_CMS&CRM": [{

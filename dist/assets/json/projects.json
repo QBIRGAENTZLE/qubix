@@ -1,5 +1,29 @@
 {
     "1_PEAKS": [{
+            "name": "CMS",
+            "year": "2019",
+            "duration": "En cours (depuis avril 2019)",
+            "shortDescription": "Gestion de publication d'articles",
+            "description": "<p>Prestation pour le client Euronews. Travail un ensemble d'applications permettant aux journalistes de publier des articles sur le site euronews.com.</p><p>Cet ensemble d'application inclut : <ul><li>Un front en Angular permettant aux utilisateurs de gérer le contenu du site : création d'articles, de breaking news, de magazine digital, gestion de flux RSS, de galerie de média...</li><li>Une API GraphQL/NodeJS réceptionnant l'ensemble des données et les stockant dans des bases de données MySQL et ElasticSearch</li><li>Un module NodeJS maison, sous Sequelize, permettant de gérer les modifications de la base de données MySQL</li><li>Une application \"cron\", sous Symfony 4, permettant d'exécuter des tâches récurrentes en background</li></ul></p><p>En tant que développeur JavaScript, j'ai été amené à travailler principalement sur le front Angular et l'API NodeJS et de développer et améliorer diverses fonctionnalités du CMS</p>",
+            "url": null,
+            "stack": [
+                "Angular 7",
+                "NodeJS 8",
+                "GraphQL",
+                "ElasticSearch",
+                "MySQL",
+                "Sequelize"
+            ],
+            "team": [
+                "1 Chef de projet",
+                "1 Lead Développeur",
+                "1 DevOps-Développeur",
+                "1 Testeur QA",
+                "1 Intégrateur",
+                "5 Développeurs"
+            ]
+        },
+        {
             "name": "Owen",
             "year": "2018 / 2019",
             "duration": 10368000000,
@@ -133,9 +157,23 @@
         }
     ],
     "3_PERSONNAL": [{
+            "name": "Suena-Flamenco",
+            "year": "2019",
+            "duration": 432000000,
+            "shortDescription": "Site internet du groupe de dans Suena-Flamenco",
+            "description": "<p>Développement du site internet du groupe de dans Suena-Flamenco sous WordPress 5.</p>",
+            "url": "http://www.suena-flamenco.com/",
+            "stack": [
+                "WordPress 5"
+            ],
+            "team": [
+                "1 Développeur"
+            ]
+        },
+        {
             "name": "Qubix",
             "year": "2019",
-            "duration": 1209600000,
+            "duration": 1728000000,
             "shortDescription": "Site internet personnel",
             "description": "<p>Développement de mon site internet personnel sous Angular 7, avec utilisation des outils Material.</p><p>Présentation personnelle, compétences, expériences professionnelles et formations suivies.</p>",
             "url": "http://qubix.fr",
